@@ -1,7 +1,4 @@
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $git_tok # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  on:
-    branch: master
+  provider: pages:git
+  token: ${GIT_SITE_TOK}
+  edge: true
