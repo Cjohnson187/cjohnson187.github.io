@@ -1,4 +1,5 @@
 deploy:
   provider: pages:git
-  token: ${GIT_SITE_TOK}
+  token: 
+    secure: ${GIT_SITE_TOK}
   edge: true
