@@ -1,5 +1,5 @@
-p {
-    color: rgb(192, 59, 59);
+p, ol {
+    color: rgb(10, 59, 59);
     size: 30px;
-    border: 1px solid green;
+    border: 3px solid green;
 }
