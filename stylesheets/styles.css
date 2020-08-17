@@ -9,12 +9,37 @@ p, ol {
 h1 {
     font-size: 40px;
     text-align: center;
+    margin: 0;
+    padding: 50px 0;
+    text-shadow: 3px 3px 2px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 600;
 
 }
-
+/* css comment example*/
 #quoted {
     font-style: italic;
 }
-.para {
+.list_class {
     color: chocolate;
+    font-size: 20px;
+}
+
+body {
+    margin: 20px;
+    padding: 20px 40px 20px 40px;
+    width: 900px;
+    border: 4px solid black;
+    background-color: greenyellow;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+html {
+    background-color: aquamarine;
+}
+
+#haram {
+    margin: 0 auto;
+    display: block;
 }
