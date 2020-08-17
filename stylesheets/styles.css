@@ -2,4 +2,19 @@ p, ol {
     color: rgb(10, 59, 59);
     size: 30px;
     border: 3px solid green;
+    line-height: 2;
+    letter-spacing: 5px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+
+}
+
+#quoted {
+    font-style: italic;
+}
+.para {
+    color: chocolate;
 }
