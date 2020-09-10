@@ -51,6 +51,15 @@ a:hover {
     padding: 14px 16px;
     text-decoration: none;
 }
+.ex-page {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 
 .fa {
     padding: 10px;
@@ -172,3 +181,15 @@ a:hover {
     margin: 30px;
 }
 
+/* recipe */
+
+#bodyExercise {
+    background-color: whitesmoke;
+    margin: 0;
+/*     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+ */        
+}
