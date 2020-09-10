@@ -1,4 +1,3 @@
-# This is the required part containing the build step for gatsby
 language: node_js
 node_js:
   - '12'
