@@ -156,6 +156,7 @@ a:hover {
     border-radius: 30px;
     padding: 20px;
     width: 80%;
+    max-width: 800px;
     margin: auto;
 }
 #ingredientsBox {
