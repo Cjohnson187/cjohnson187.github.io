@@ -1,16 +1,7 @@
-language: node_js
-node_js: node
-cache:
-  yarn: true
-  directories:
-    - public
-    - .cache
-script: yarn build # Generate static HTML files
-
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: ${GIT_SITE_TOK}
-  keep_history: true
+  github_token: $GIT_SITE_TOK
+  keep_histry: true
   on:
     branch: master
