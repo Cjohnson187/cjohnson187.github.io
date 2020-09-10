@@ -5,8 +5,7 @@ cache:
   directories:
     - public
     - .cache
-script:
-  - yarn build # Generate static HTML files
+script: yarn build # Generate static HTML files
 
 deploy:
   provider: pages
