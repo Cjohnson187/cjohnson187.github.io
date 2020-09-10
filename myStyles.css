@@ -1,0 +1,174 @@
+html {
+    height: 100%;
+    margin: auto;
+    width: 100%;
+}
+
+#bodyMain {
+    margin: 0;
+    background-image: url(images/nasa-vltMzn0jqsA-unsplash.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    
+}
+
+a:hover {
+    opacity: .5;
+}
+
+.navBar {
+    overflow: hidden;
+    background-color:#333;
+    opacity: .9;
+}
+.foot {
+    overflow: hidden;
+    background-color:#333;
+    opacity: .9;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.home {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.proj-page {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.fa {
+    padding: 10px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    float: right;
+}
+
+.fa-github {
+    color: white;
+}
+.fa-linkedin {
+    color: white;
+}
+.fa-facebook {
+    color: white;
+}
+
+/* .front-page-info-buttons {
+    margin-right: 0;
+    margin-left: 0;
+
+}
+ */.info-buttons {
+    margin: auto;
+}
+
+#about-desc {
+    width: 50%;
+    margin: auto;
+    
+}
+
+#about-me-field {
+    text-align: center; 
+    padding: 30px; 
+    margin: auto;
+}
+
+#skills-field {
+    text-align: center; 
+    padding: 30px; 
+    margin: auto;
+}
+
+#tools-field {
+    padding: 30px;
+    margin: auto;
+}
+
+
+
+    
+
+/* loader */
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+/* recipe */
+
+#bodyProjects {
+    background-image: url(images/bernard-hermant-X-Bu9X6gok0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    margin: 0;
+    
+}
+
+
+#recipeH2 {
+    margin: auto;
+}
+
+.recipe {
+    background-color: wheat;
+    border-style: solid;
+    border-radius: 30px;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+#ingredientsBox {
+    width: 60%;
+    float: left;
+    padding-right: 10px;
+}
+
+#imageBox {
+    width: 40%;
+    float: left;
+    padding: 30px;
+    background-image: url(images/alexandra-golovac-xsfX3AqLDKo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#recipeBox {
+    padding: 30px;
+    margin: 30px;
+}
+

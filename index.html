@@ -1,41 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title >
-                Chris Johnson's sample website
-        </title>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap" rel="stylesheet" type="text/css">
-        <link href="stylesheets/styles.css" rel="stylesheet" type="text/css">
+        <meta name="description" content="Chris Johnson Website.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" >
+        <link rel="stylesheet" type="text/css" href="myStyles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="myScripts.js"></script>
     </head>
-    <body>
-    <!--This is just testing a commment in html-->
-        <h1 style="color:blue; background-color: grey; text-align: center; border-block-color: green;"> Harambe Memorial Community Web Page. </h1>
-        <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TDMpiS9IN082YPTiyclPy1TIyCxQyMgvAACBvAkW&q=lofi+hip+hop&oq=&aqs=chrome.0.46j35i39l6j69i59.537970j0j7&sourceid=chrome&ie=UTF-8">Lofi hip hop</a>
+    <div>
+        <body id="bodyMain">
 
-        <hr>
-        <h2 style="color:red"> 2nd header can get up to 6 headers </h2>
-        <p class="list_class">
+            <header style="margin:0px;">
+                <div class="navBar">
+                    <a class="home" href="index.html">Home</a>
+                    <a class="proj-page" href="projects/projects.html">Projects</a>
+                    <a class="fa fa-github" href="https://github.com/Cjohnson187"></a>
+                    <a class="fa fa-linkedin" href="https://www.linkedin.com/in/chris-johnson-a743a761"></a>
+                    <a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=1337006506"></a>
+                </div>
+            </header>
+            
+            <Section>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <h1 style="font-family: 'Gill Sans', 'Gill Sans MT'; color:black; text-align: center; font-size: 60px;">Chris Johnson</h1>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center; padding-bottom: 40px;">
+                    <h2 style="text-align: center;">Software developer</h2>
+                </div>
 
-            these are lines in a paragraph with breaks<br>
-            this is the second line in the paragraph<br>
-            this is the third line in the paragraph<br>
+            </Section>
 
-            <button>Congratulate yourself.</button>
-        </p>
-        <hr>
-        <ol>
-            <li> bread </li>
-            <li> chicken </li>
-            <li> brocolli </li>
+            <section>
+                <div style="display: flex;">
+                    <button onclick="aboutMeFunction()" id="about-me-button" class="info-buttons">about me</button>
+                </div>
+                <br>
+                <div id="about-me-field" style="display:none; padding: 20px;">
+                    <p id="about-desc">
+                        I recently graduated from MSU Denver with
+                        a BS in Computer Science. I have experience with Java, Python,
+                        C/C++, SQL, HTML, CSS, JavaScript, and machine learning. I am a team player, independent, 
+                        can adapt quickly, and  I am not afraid of a challenge. 
+                        I am currently looking for a developer position where I can 
+                        apply my skills and learn new ways to expand my knowledge.
+                    </p>
+                </div>
+            </section>
 
-        </ol>
-      
-        <p id="quoted">RIP in peace ...  (just testing image resources)</p>
-        <img id="haram" src= "image/remeber_harambe.jpg" alt="Remember harambe">
-        <hr>
-        <script src="scripts/myscript.js"> </script>
+            <section >
+                <div style="display: flex;">
+                    <button onclick="skillsFunction()"  class="info-buttons">Skills</button>
+                </div>
+                <div id="skills-field" style="display:none;  padding: 20px;">
+                    <div style="  width: 50%; float: left;  margin-right:0; margin-left: 0;">
+                        <h3 style="text-align: center; border-bottom-style: groove; ">Skills</h3>
+                        <ul style="text-align: center";>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                    <div style="width: 50%; float: left; margin: auto; ">
+                        <h3 style="text-align: center; border-bottom-style: groove;" >Soft Skills</h3>
+                        <ul style="text-align: center;">
+                            <li> self motivated</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
+            <br>
+            <section>
+                <div id="tools-button" style="display: flex;">
+                    <button onclick="toolsFunction()" class="info-buttons">Tools</button>
+                </div>
+                <br>
+                <div id="tools-field" style=" display: none;">
+                    <ul style="width: 100%; text-align: center; list-style-type: none;">
+                        <li> <pre> VS code     <i class="material-icons">code</i></pre></li>
+                        <li> <pre> IntelliJ     <i class="material-icons">code</i></pre></li>
+                        <li> <pre> Android Studio     <i class="material-icons">code</i></pre></li>
+                        <li> <pre> Junit testing     <i class="material-icons">error</i></pre></li>
+                        <li> <pre> Continuous Integration     <i class="material-icons">integration_instructions</i></pre></li>
+                        <li> <pre> Tensorflow     <i class="material-icons">psychology</i></pre></li>
+                        <li> <pre> Static Analysis     <i class="material-icons">check_box</i></pre></li>
+                        <li> <pre> Debugging     <i class="material-icons">error</i></pre></li>
 
-    </body>
+                    </ul>
+                </div>
+            </section> 
+
+            <footer class="foot">
+                <div style="display: flex;">
+                    <div style="width: 20%; float: left;">
+                        <div style="text-align: center; margin: auto;">about</div>
+                        <div style="text-align: center; margin: auto;">references</div>
+                    </div>
+                    <div style="display: flex; width: 80%;">
+                        <div style="width: 50%; float: left; text-align: center; margin: auto;">Space invaders</div>
+                        <div style="width: 25%; float: left; text-align: center; margin: auto;"><i class="material-icons">play_arrow</i></div>
+                        <div style="width: 25%; float: left; text-align: center; margin: auto;"><i class="material-icons">videogame_asset</i></div>
+                    </div>
+                </div>
+
+            </footer>
+
+        </body>
+    </div>
+
 </html>
