@@ -46,8 +46,8 @@ html {
  
  #hello-image {
      border-radius: 50%;
-     width: 100px;
-     height: 100px;
+     width: 150px;
+     height: 150px;
      border-style: solid;
  }
 
@@ -72,8 +72,8 @@ html {
 #profile-image-box { 
     float: left;
     margin-right: 100px;
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
 
 }
 
