@@ -1,7 +1,0 @@
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GIT_SITE_TOK
-  keep_histry: true
-  on:
-    branch: master
