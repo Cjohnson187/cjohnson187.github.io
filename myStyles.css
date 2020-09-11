@@ -1,9 +1,11 @@
 html {
     height: 100%;
     width: 100%;
+    top: 0;
+    bottom: 0;
 }
 
-#bodyMain {
+/* #bodyMain {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 0;
     padding: 0;
@@ -15,9 +17,39 @@ html {
     background-position: center;
     background-size: cover;
 
-    /*keyboard image ref */
-    /*<span>Photo by <a href="https://unsplash.com/@skabrera?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sergi Kabrera</a> on <a href="https://unsplash.com/s/photos/computer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*/
+    keyboard image ref
+    <span>Photo by <a href="https://unsplash.com/@skabrera?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sergi Kabrera</a> on <a href="https://unsplash.com/s/photos/computer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 }
+
+ */.body-main {
+    display: block;
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: 160px;
+}
+
+.body-main::before {
+    content: '';
+    background-image: url(images/backllighten.jpg) ;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+ }
+ 
+ #hello-image {
+     border-radius: 50%;
+     width: 100px;
+     height: 100px;
+     border-style: solid;
+ }
 
 #main-header {
     font-family: Arial, Helvetica, sans-serif; color:black; 
@@ -26,13 +58,22 @@ html {
     font-style: oblique;
 }
 
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed; /* does not on move on scroll */
+    z-index: 1; /* always on top */
+    top: 0;  /* stay on left and top */
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; /* no horizontal scrolling */
+}
+
 #profile-image-box { 
     float: left;
-    margin-right: 40px;
+    margin-right: 100px;
     width: 100px;
     height: 100px;
-    border-color: #333;
-    border-style: dashed;
 
 }
 
@@ -46,14 +87,12 @@ a:hover {
     opacity: .9;
 }
 .foot {
-    overflow: hidden;
     background-color:#333;
     opacity: .9;
     height: 40px;
-    position: fixed;
     bottom: 0;
-    right: 0;
-    left: 0;
+    width: 100%;
+    position: absolute;
 }
 
 .home {
