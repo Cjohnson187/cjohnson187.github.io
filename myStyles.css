@@ -5,7 +5,7 @@ html {
     bottom: 0;
 }
 
-/* #bodyMain {
+#bodyMain {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 0;
     padding: 0;
@@ -17,13 +17,14 @@ html {
     background-position: center;
     background-size: cover;
 
-    keyboard image ref
+/*     keyboard image ref
     <span>Photo by <a href="https://unsplash.com/@skabrera?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sergi Kabrera</a> on <a href="https://unsplash.com/s/photos/computer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+ */
 }
 
- */.body-main {
+.body-main {
     display: block;
-    position: fixed;
+    position: absolute;
     margin-top: 0;
     top: 0;
     bottom: 0;
@@ -36,7 +37,12 @@ html {
     content: '';
     background-image: url(images/backllighten.jpg) ;
     background-size: cover;
-    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+    opacity: .7;
+
     top: 0;
     left: 0;
     bottom: 0;
@@ -91,8 +97,9 @@ a:hover {
     opacity: .9;
     height: 40px;
     bottom: 0;
+    left: 0;
     width: 100%;
-    position: absolute;
+    position: fixed;
 }
 
 .home {
