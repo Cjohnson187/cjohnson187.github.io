@@ -5,7 +5,7 @@ html {
     bottom: 0;
 }
 
-#bodyMain {
+/* #bodyMain {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 0;
     padding: 0;
@@ -17,20 +17,18 @@ html {
     background-position: center;
     background-size: cover;
 
-/*     keyboard image ref
-    <span>Photo by <a href="https://unsplash.com/@skabrera?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sergi Kabrera</a> on <a href="https://unsplash.com/s/photos/computer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
- */
 }
-
+ */
 .body-main {
     display: block;
     position: absolute;
     margin-top: 0;
     top: 0;
-    bottom: 0;
-    left: 0;
+/*     bottom: 0;
+ */    left: 0;
     right: 0;
     margin-left: 160px;
+    margin-bottom: 40px;
 }
 
 .body-main::before {
@@ -42,12 +40,12 @@ html {
     background-attachment: fixed;
     position: fixed;
     opacity: .7;
-
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: -1;
+    margin-bottom: 40px;
  }
  
  #hello-image {
@@ -83,6 +81,106 @@ html {
 
 }
 
+.slideImg {
+    display: block;
+    margin: auto;
+    width: 100%;    
+}
+
+
+* {box-sizing: border-box;}
+
+.slideshow-container {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+    align-content: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+     right: 0;
+     border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 80px;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {font-size: 11px;}
+}
+
+ 
+
+
 a:hover {
     opacity: .5;
 }
@@ -97,6 +195,7 @@ a:hover {
     opacity: .9;
     height: 40px;
     bottom: 0;
+    margin-bottom: 0;
     left: 0;
     width: 100%;
     position: fixed;
