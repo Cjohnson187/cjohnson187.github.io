@@ -1,20 +1,39 @@
 html {
     height: 100%;
-    margin: auto;
     width: 100%;
 }
 
 #bodyMain {
-    margin: 0;
-    /*keyboard image ref */
-    /*<span>Photo by <a href="https://unsplash.com/@skabrera?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sergi Kabrera</a> on <a href="https://unsplash.com/s/photos/computer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*/
-    background-image: url(images/sergi-kabrera-2xU7rYxsTiM-unsplash.jpg) ;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    padding: 0;
+    backdrop-filter: 2;
+    background-image: url(images/backllighten.jpg) ;
+    background-blend-mode: lighten;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    min-height: 500px;
-    
+
+    /*keyboard image ref */
+    /*<span>Photo by <a href="https://unsplash.com/@skabrera?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sergi Kabrera</a> on <a href="https://unsplash.com/s/photos/computer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*/
+}
+
+#main-header {
+    font-family: Arial, Helvetica, sans-serif; color:black; 
+    text-align: center; 
+    font-size: 60px;
+    font-style: oblique;
+}
+
+#profile-image-box { 
+    float: left;
+    margin-right: 40px;
+    width: 100px;
+    height: 100px;
+    border-color: #333;
+    border-style: dashed;
+
 }
 
 a:hover {
