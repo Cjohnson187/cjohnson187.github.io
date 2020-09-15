@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* main body styles */
+.body-main {
+
+}
+
+
+/* Site nav section */
+.sidenav {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidenav a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidenav a.active {
+    background-color: #3CAF50;
+    color: white;
+}
+
+.sidenav a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+section.body-content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidenav a {float: left;}
+    section.body-content {margin-left: 0;}
+}
+@media screen and (max-width: 400px) {
+    .sidenav a {
+        text-align: center;
+        float: none;
+    }
+}
+
+
+.nav-buttons-container {
+    width: auto;
+    top: 0; 
+    left: 0; 
+    right: 0;
+}
+
+/* navigation buttons */
+.home {
+
+}
+.proj-page {
+}
+.ex-page {
+}
+.social-container {
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    position: absolute;
+    text-align: center;
+}
+
+.fa {
+    padding: 10px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+   /*  float: right; */
+}
+
+.fa-github {
+    color: white;
+}
+.fa-linkedin {
+    color: white;
+}
+.fa-facebook {
+    color: white;
+}
