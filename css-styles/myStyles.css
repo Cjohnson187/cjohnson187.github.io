@@ -3,12 +3,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* main body styles 
-.body-main {
-
-}*/
-
-
 
 /* Site nav section */
 .sidenav {
@@ -66,17 +60,21 @@ body {
         width: 100%;
         position: relative;
     }
-    .social-container {
-        position: unset  ;
-        height: 100%;
-    }
-    .nav-buttons-container a {
+    /* navigation buttons */
+    .active {
         float: left;
-        height: auto;
     }
-    .social-container a {
+    .proj-page {
+        float: left;
+    }
+    .ex-page {
+        float: left;
+    }
+
+    /* social media buttons */
+    .fa {
         float: right;
-        height: 100%;
+        position: unset !important;
     }
 
     section.body-content {margin-left: 0;}
@@ -84,6 +82,14 @@ body {
 
 }
 @media screen and (max-width: 400px) {
+    .sidenav {
+        height: 100px;
+
+    }
+    .fa {
+        position: absolute !important;
+        top: 50px !important;
+    }
     .nav-buttons-container {
         width: 100%;
         top: 0;
@@ -105,7 +111,6 @@ body {
         float: right;
         height: calc(100% - 29px) !important ;
         border-radius: unset;
-
         right: 0;
         left: 0;
         overflow: auto;
@@ -138,15 +143,19 @@ body {
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
-   /*  float: right; */
+    position: absolute;
+    bottom: 0;
 }
 
 .fa-github {
     color: white;
+    left: 110px;
 }
 .fa-linkedin {
     color: white;
+    left: 60px;
 }
 .fa-facebook {
     color: white;
+    left: 10px;
 }
