@@ -26,6 +26,7 @@ body {
     color: black;
     padding: 16px;
     text-decoration: none;
+    margin: 0;
 }
 
 .sidenav a.active {
@@ -66,14 +67,13 @@ body {
         height: auto;
         position: relative;
     }
-    .nav-buttons-container {
-        max-width: 300px;
-    }
     .social-container {
         position: unset !important ;
+        position: absolute;
     }
     .nav-buttons-container a {
         float: left;
+        height: auto;
     }
     .social-container a {
         float: right;
@@ -84,15 +84,26 @@ body {
 
 }
 @media screen and (max-width: 400px) {
-    .sidenav a {
+
+    .nav-buttons-container a {
         text-align: center;
-        float: none;
-    }
-    .social-container {
-        width: auto;
         right: 0;
         left: 0;
+        top: 0;
+    }
+    .social-container a{
+        right: 0;
+        left: 0;
+        position: unset !important ;
 
+    }
+
+
+
+    .sidenav a {
+        text-align: center;
+        
+        float: none;
     }
     .social-container a {
         overflow: auto;
