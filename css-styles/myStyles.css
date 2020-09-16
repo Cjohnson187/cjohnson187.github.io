@@ -3,10 +3,11 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* main body styles */
+/* main body styles 
 .body-main {
 
-}
+}*/
+
 
 
 /* Site nav section */
@@ -37,10 +38,26 @@ body {
     color: white;
 }
 
-section.body-content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
+.intro {
+    text-align: center;
+}
+.intro::before {
+    content: "";
+    background-image: url(../images/nasa-vltMzn0jqsA-unsplash.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    margin-bottom: 40px;
+    
+
 }
 
 @media screen and (max-width: 700px) {
@@ -49,32 +66,60 @@ section.body-content {
         height: auto;
         position: relative;
     }
-    .sidenav a {float: left;}
+    .nav-buttons-container {
+        max-width: 300px;
+    }
+    .social-container {
+        position: unset !important ;
+    }
+    .nav-buttons-container a {
+        float: left;
+    }
+    .social-container a {
+        float: right;
+    }
+
     section.body-content {margin-left: 0;}
+
+
 }
 @media screen and (max-width: 400px) {
     .sidenav a {
         text-align: center;
         float: none;
     }
+    .social-container {
+        width: auto;
+        right: 0;
+        left: 0;
+
+    }
+    .social-container a {
+        overflow: auto;
+        text-align: center;
+        margin: 0;
+        padding: 14px;
+        font-size: 80%;
+        float: left;
+    }
 }
 
 
 .nav-buttons-container {
     width: auto;
-    top: 0; 
     left: 0; 
     right: 0;
 }
 
-/* navigation buttons */
+/* navigation buttons
 .home {
 
 }
 .proj-page {
 }
 .ex-page {
-}
+}*/
+
 .social-container {
     bottom: 0; 
     left: 0; 
