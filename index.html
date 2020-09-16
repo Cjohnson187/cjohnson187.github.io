@@ -1,109 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Chris Johnson Home</title>
         <meta charset="utf-8">
         <meta name="description" content="Chris Johnson Website.">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" >
-        <link rel="stylesheet" type="text/css" href="myStyles.css">
+        <meta name="author" content="Chris Johnson">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet" type="text/css" href="css-styles/myStyles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <script src="myScripts.js"></script>
-        <script src="slideIndex.js"></script>
-
     </head>
 
     <!-- body -->
-    <body style="margin: 0;"> 
+    <body> 
+        <script src="js-scripts/myScripts.js" ></script>
+
         <!-- navigation bar left side -->
-        <div class="sidenav">
-            <div style="top: 0; left: 0; position: absolute;">
-                <a class="home" href="index.html">Home</a>
-                <div></div>
+        <section class="sidenav">
+            <!-- site nav buttons -->
+            <div class="nav-buttons-container">
+                <a class="active" href="index.html"> Home </a>
                 <a class="proj-page" href="projects/projects.html">Projects</a>
-                <div></div>
                 <a class="ex-page" href="exercises/exercises.html">Exercises</a>
-                <div></div>
             </div>
-            <div style="bottom: 0; left: 0; position: absolute;">
+            <!-- social media links -->
+            <div class="social-container">
                 <a class="fa fa-github" href="https://github.com/Cjohnson187"></a>
                 <a class="fa fa-linkedin" href="https://www.linkedin.com/in/chris-johnson-a743a761"></a>
                 <a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=1337006506"></a>
             </div>
-        </div>
-        <div></div>
+        </section>  
 
         
         <!-- body secction -->
-        <div class="body-main">
+        <section class="body-content">
+            <!-- Intro section quick bio -->
+            <section class="">
 
-            <div style="display: flex; justify-content: center; align-items: center; margin-top: 50px; margin-bottom: 50px;">
-                <!-- image for intro -->
-                <div id="profile-image-box" style="float: left;"><img id="hello-image" src="images/new thubs up crop.jpg" alt="thumbs up image"></div>
-                <!-- text for intro  -->
-                <div style="float: left;"><h1 id="main-header" >Hi, my name is Chris.</h1></div>
-            </div>
-
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <div style="text-align: center;"><H2>I am a Software Developer, </H2></div>
-                    <!-- Software Developer -->
-                    <div class="numbertext"> 1 / 4</div>
-                    <img src="images/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg" alt="code on computer" style="width: 100%;">
-<!--                     <div class="text">Software Developer</div>
- --><!--                     <div><span>Photo by <a href="https://unsplash.com/@ffstop?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Fotis Fotopoulos</a> on <a href="https://unsplash.com/s/photos/software?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></div>
- -->                </div>
-                <div class="mySlides fade"> 
-                    <div style="text-align: center;"><H2> a Web Developer, </H2></div>
-                    <!-- web developer -->
-                    <div class="numbertext"> 2 / 4</div>
-                    <img style="width: 100%;" src="images/mar-linares-rhwCiuaEFC0-unsplash.jpg" alt="spider web">
-<!--                     <div><span>Photo by <a href="https://unsplash.com/@deepclearsea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mar Linares</a> on <a href="https://unsplash.com/s/photos/spider-web?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></div>
-                    <div class="text">Web Developer</div> -->
-                </div>
-                <div class="mySlides fade">
-                    <div style="text-align: center;"><H2> a Computer Scientist, </H2></div>
-                    <!-- computer scientist -->
-                    <div class="numbertext"> 3 / 4</div>
-                    <img style="width: 100%;" src="images/jeswin-thomas-dfRrpfYD8Iw-unsplash.jpg" alt="arduino board">
-<!--                     <div class="text">Software Developer</div>
- --><!--                     <div><span>Photo by <a href="https://unsplash.com/@jeswinthomas?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jeswin Thomas</a> on <a href="https://unsplash.com/s/photos/computer-science?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></div>
- -->                </div>
-                <div class="mySlides fade">
-                    <div style="text-align: center;"><H2> and most importantly</H2></div>
-                    <div style="text-align: center;"><H2> A Rennaissance Man. </H2></div>
+            </section>
 
 
-                    <!-- renaissance man -->
-                    <div class="numbertext"> 4 / 4</div>
-                    <img style="width: 100%;" src="images/renaissance.jpg" alt="most interesting man interview meme">
-<!--                     <div class="text">Rennaissance Man</div>
- -->                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </section>
 
-            </div> <!-- end slideshow area -->
-            <br>
-            <!-- dots / circles -->
-            <div style="text-align: center;">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-            </div>
 
-        <div>
-
-            <!-- footer section -->
-        <div>
-            <footer class="foot">
-                <div style="display: flex;">
-                    <div style="display: flex; width: 80%;">
-                        <div style="width: 50%; float: left; text-align: center; margin: auto;">Coming soon!  --> </div>
-                        <div style="width: 50%; float: left; text-align: center; margin: auto;">Space invaders</div>
-                        <div style="width: 25%; float: left; text-align: center; margin: auto;"><i class="material-icons">videogame_asset</i></div>
-                    </div>
-                </div>
-            </footer>
-        </div>
     </body>
+
+
 </html>
