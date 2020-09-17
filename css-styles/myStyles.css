@@ -15,6 +15,11 @@ body {
     overflow: auto;
 }
 
+.home {
+    display: block;
+    float: left;
+}
+
 .sidenav a {
     display: block;
     color: black;
@@ -35,24 +40,11 @@ body {
 
 .intro {
     text-align: center;
-}
-.intro::before {
-    content: "";
     background-image: url(../images/nasa-vltMzn0jqsA-unsplash.jpg) ;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
-    position: fixed;
-    opacity: .7;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    margin-bottom: 40px;
-    
-
+    background-size: contain;
+    height: 500px;
+    padding: 50px;
 }
 
 @media screen and (max-width: 700px) {
@@ -94,46 +86,6 @@ body {
         width: 100%;
         top: 0;
     }
-
-    .nav-buttons-container a {
-        
-        text-align: center;
-        right: 0;
-        left: 0;
-        top: 0;
-    }
-    .social-container {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-    }
-    .social-container a{
-        float: right;
-        height: calc(100% - 29px) !important ;
-        border-radius: unset;
-        right: 0;
-        left: 0;
-        overflow: auto;
-        text-align: center;
-        margin: 0;
-        padding: 10px;
-    }
-}
-
-
-.nav-buttons-container {
-    width: auto;
-    left: 0; 
-    right: 0;
-}
-
-
-.social-container {
-    bottom: 0; 
-    left: 0; 
-    right: 0; 
-    position: absolute;
-    text-align: center;
 }
 
 .fa {
