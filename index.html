@@ -13,7 +13,6 @@
 
     <!-- body -->
     <body> 
-        <script src="js-scripts/myScripts.js" ></script>
 
         <!-- navigation bar left side -->
         <section class="sidenav">
@@ -30,15 +29,51 @@
         
         <!-- body secction -->
         <section class="body-content">
-            <!-- Intro section quick bio -->
-            <section class="intro">
-               <h1 style="margin: 0;">Hi my name is...</h1>
-                <h1>Who?</h1>
-                <h1>Chris Johnson</h1>
 
-            </section>
+<!--             <div class="slideshow-container">  -->                
+            <div id="intro">
+<!--                 
+                <script>
+                    try {
+                        setTimeout(function() { document.getElementById("intro").style.backgroundImage = "url('images/backllighten.jpg')" } )
+                    }
+                    catch(err) {
+                        document.getElementById("intro").innerHTML = err.message;
+
+                    }
+
+                </script>
+ -->
+
+                <!-- Intro section quick bio with slideshow-->
+                <div class="slideshow fade">
+                    <div id="profile">
+                        <h1 style="margin: 0;">Hi my name is...</h1>
+                    </div>
+                    <img src="images/owen-lystrup-chaqHXlOzYs-unsplash.jpg" alt="union station" style="width: 100%;">
+                </div>
+                <div class="slideshow fade">
+                    <div id="profile">
+                        <h1>Who?</h1>
+                    </div>
+                    <img src="images/miranda-joondeph-lkLTeBY2SZE-unsplash.jpg" alt="blue bear" style="width: 100%;">
+                </div>
+                <div class="slideshow fade">
+                    <div id="profile">
+                        <h1>Chris Johnson</h1>
+                    </div>
+                    <img src="images/cassie-gallegos-tjoxkIODoCE-unsplash.jpg" alt="park" style="width: 100%;">
+                </div>
+            </div>
+            <br>
+            <div style="text-align: center;">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
             <section>
-                <div style="text-align: center;" >
+                <div>
                     <p> ->this should be in a sepearte container below<-</p>
                 </div>
             </section>
@@ -46,7 +81,7 @@
 
         </section>
 
-
+        <script src="js-scripts/myScripts.js" ></script>
     </body>
 
 

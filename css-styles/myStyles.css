@@ -3,6 +3,50 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+* {box-sizing: border-box}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow {
+    display: none;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.activeSlide, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
 
 /* Site nav section */
 .sidenav {
@@ -33,7 +77,7 @@ body {
     color: white;
 }
 
-.intro {
+#intro {
     text-align: center;
     background-image: url(../images/nasa-vltMzn0jqsA-unsplash.jpg) ;
     background-attachment: fixed;
@@ -43,6 +87,15 @@ body {
     padding: 50px;
     margin-left: 175px;
 }
+
+
+#profile {
+    margin: 50px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    height: 400px;
+}
+
 
 @media screen and (max-width: 700px) {
     .sidenav {
