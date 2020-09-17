@@ -3,57 +3,22 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-* {box-sizing: border-box}
+/* * {box-sizing: border-box}
+ */
+.body-content {
+    margin-left: 175px;
+    border-left: #bb6f27;
+    border-left-style: groove;
+    border-right-style: groove;
 
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
 }
-
-.slideshow {
-    display: none;
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-.activeSlide, .dot:hover {
-    background-color: #717171;
-}
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-
 
 /* Site nav section */
 .sidenav {
     margin: 0;
     padding: 0;
     width: 175px;
-    background-color: #f1f1f1;
+    background-color: rgb(146, 144, 144);
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -68,7 +33,7 @@ body {
 }
 
 .sidenav a.active {
-    background-color: #3CAF50;
+    background-color: #bb6f27;
     color: white;
 }
 
@@ -77,17 +42,46 @@ body {
     color: white;
 }
 
+/* intro is the top half of the index page */
 #intro {
     text-align: center;
     background-image: url(../images/nasa-vltMzn0jqsA-unsplash.jpg) ;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat ;
     position: relative;
-    height: 500px;
+    height: 900px;
     padding: 50px;
-    margin-left: 175px;
+    border-bottom: #bb6f27;
+    border-bottom-style: groove;
+
 }
 
+#intro-box {
+    height: 600px;
+    width: 500px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgb(146, 144, 144);
+    border-radius: 40px;
+}
+
+#profile-image {
+    height: 300px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 40px;
+}
+
+#profile-desc {
+    text-align: center;
+    font-size: 30px;
+}
 
 #profile {
     margin: 50px;
@@ -95,6 +89,16 @@ body {
     border-radius: 20px;
     height: 400px;
 }
+
+/* bottom part of index page */
+#index-bottom {
+    height: 900px; /* temporary just to look at page sizing */
+    text-align: center; 
+    padding-top: 80px;
+    background-color: rgb(161, 161, 161);
+
+}
+
 
 
 @media screen and (max-width: 700px) {
