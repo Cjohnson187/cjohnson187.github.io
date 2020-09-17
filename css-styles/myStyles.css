@@ -15,11 +15,6 @@ body {
     overflow: auto;
 }
 
-.home {
-    display: block;
-    float: left;
-}
-
 .sidenav a {
     display: block;
     color: black;
@@ -60,6 +55,9 @@ body {
         float: left;
     }
     .ex-page {
+        float: left;
+    }
+    .home {
         float: left;
     }
 
