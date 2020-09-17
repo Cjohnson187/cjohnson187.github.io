@@ -8,7 +8,7 @@ body {
 .sidenav {
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 175px;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
@@ -38,14 +38,17 @@ body {
     background-image: url(../images/nasa-vltMzn0jqsA-unsplash.jpg) ;
     background-attachment: fixed;
     background-size: contain;
+    position: relative;
     height: 500px;
     padding: 50px;
+    margin-left: 175px;
 }
 
 @media screen and (max-width: 700px) {
     .sidenav {
         width: 100%;
         position: relative;
+        overflow: hidden;
     }
     /* navigation buttons */
     .active {
@@ -59,6 +62,9 @@ body {
     }
     .home {
         float: left;
+    }
+    .intro {
+        margin-left: 0;
     }
 
     /* social media buttons */
@@ -74,15 +80,19 @@ body {
 @media screen and (max-width: 400px) {
     .sidenav {
         height: 100px;
-
+        overflow: scroll;
     }
     .fa {
         position: absolute !important;
         top: 50px !important;
+        display: none;
     }
     .nav-buttons-container {
         width: 100%;
         top: 0;
+    }
+    .intro{
+        margin-left: 0;
     }
 }
 
