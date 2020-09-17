@@ -136,13 +136,13 @@ body {
 }
 @media screen and (max-width: 400px) {
     .sidenav {
-        height: 100px;
+        height: 52px;
         overflow: scroll;
     }
     .fa {
         position: absolute !important;
         top: 50px !important;
-        display: none;
+        display: none !important;
     }
     .nav-buttons-container {
         width: 100%;
