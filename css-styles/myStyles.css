@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:  'Coustard';font-size: 22px;
     width: 100%;
 }
 /* body {
@@ -22,7 +22,7 @@ body {
     margin: 0;
     padding: 0;
     width: 175px;
-    background-color: rgb(146, 144, 144);
+    background-color: rgba(0, 0, 0, 0.795);
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -30,14 +30,14 @@ body {
 
 .sidenav a {
     display: block;
-    color: black;
+    color: white;
     padding: 16px;
     text-decoration: none;
     margin: 0;
 }
 
 .sidenav a.active {
-    background-color: #bb6f27;
+    background-color:#bb6f27;
     color: white;
 }
 
@@ -51,7 +51,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-image: url(../images/nasa-vltMzn0jqsA-unsplash.jpg) ;
+    background-image: url(../images/tandem-x-visuals-5jBPxMkoTDA-unsplash.jpg) ;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat ;
@@ -74,7 +74,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: rgb(146, 144, 144);
+    background-color: #fd8f28;
     border-radius: 40px;
 }
 
@@ -87,7 +87,7 @@ body {
 
 #profile-desc {
     text-align: center;
-    font-size: 30px;
+    color: white;
 }
 
 #profile {
@@ -100,9 +100,8 @@ body {
 /* bottom part of index page */
 #index-bottom {
     height: 900px; /* temporary just to look at page sizing */
-    text-align: center; 
     padding-top: 80px;
-    background-color: rgb(161, 161, 161);
+    background-color: #fd8f28;
 
 }
 
@@ -156,6 +155,16 @@ body {
         margin-left: 0;
     }
 
+}
+
+.need {
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.need ul {
+    color: white;
 }
 
 .fa {
