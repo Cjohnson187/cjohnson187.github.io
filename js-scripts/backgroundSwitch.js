@@ -15,5 +15,5 @@ function change() {
     }
     document.getElementById("intro").style.backgroundImage = strings[index];
     index++;
-    setTimeout(change, 10000 )
+    setTimeout(change, 20000 )
 }
