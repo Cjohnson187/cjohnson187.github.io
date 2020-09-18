@@ -1,8 +1,12 @@
 body {
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
+    width: 100%;
 }
-
+/* body {
+    display: flex;
+}
+ */
 /* * {box-sizing: border-box}
  */
 .body-content {
@@ -44,6 +48,7 @@ body {
 
 /* intro is the top half of the index page */
 #intro {
+    display: flex;
     text-align: center;
     background-image: url(../images/nasa-vltMzn0jqsA-unsplash.jpg) ;
     background-attachment: fixed;
@@ -58,9 +63,13 @@ body {
 }
 
 #intro-box {
-    height: 600px;
-    width: 500px;
-    margin-top: 150px;
+    justify-content: center;
+    max-width: 400px;
+    max-height: 600px;
+    display: block;
+    height: auto;
+    width: auto;
+    margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -69,12 +78,11 @@ body {
 }
 
 #profile-image {
-    height: 300px;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    box-sizing: inherit;
+    max-width: 300px;
+    height: auto;
+    width: auto;
+    margin: 30px;
     border-radius: 40px;
 }
 
@@ -98,8 +106,6 @@ body {
     background-color: rgb(161, 161, 161);
 
 }
-
-
 
 @media screen and (max-width: 700px) {
     .sidenav {
