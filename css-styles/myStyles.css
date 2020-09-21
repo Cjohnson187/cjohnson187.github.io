@@ -1,13 +1,40 @@
+* {box-sizing: border-box}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg) } 
+}
+
+@-webkit-keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg) } 
+}
+
+
 body {
     margin: 0;
     font-family:  'Coustard';font-size: 22px;
     width: 100%;
 }
-/* body {
-    display: flex;
+#index-body {
+    display: none;
 }
- */
-* {box-sizing: border-box}
+
 
 .body-content {
     margin-left: 175px;
@@ -67,8 +94,8 @@ body {
     max-width: 400px;
     max-height: 600px;
     display: block;
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     margin-top: 10%;
     margin-bottom: 30%;
     margin-left: auto;
@@ -99,11 +126,44 @@ body {
 
 /* bottom part of index page */
 #index-bottom {
-    height: 900px; /* temporary just to look at page sizing */
+    height: 100%;
     padding-top: 80px;
+    padding-bottom: 80px;
     background-color: #fd8f28;
 
 }
+
+/* contact form on main page */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #4caF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.contact-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px;
+}
+
+
 
 @media screen and (max-width: 700px) {
     .sidenav a {
@@ -166,9 +226,7 @@ body {
 }
 
 .need {
-    margin-left: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px;
 }
 
 .need ul {
