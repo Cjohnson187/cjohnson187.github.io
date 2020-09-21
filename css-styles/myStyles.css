@@ -1,5 +1,5 @@
-* {box-sizing: border-box}
-
+/* * {box-sizing: border-box}
+ */
 #loader {
     position: absolute;
     left: 50%;
@@ -207,6 +207,12 @@ input[type=submit]:hover {
 
 }
 @media screen and (max-width: 400px) {
+    .sidenav a{
+        padding: 12px;
+    }
+    .ex-page{
+        padding-right: 28px;
+    }
     .sidenav {
         height: 52px;
     }
