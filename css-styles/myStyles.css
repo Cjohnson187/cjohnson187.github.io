@@ -1,5 +1,8 @@
-/* * {box-sizing: border-box}
- */
+html {
+    height: 100%;
+    margin: 0;
+}
+
 #loader {
     position: absolute;
     left: 50%;
@@ -30,9 +33,7 @@ body {
     margin: 0;
     font-family:  'Coustard';font-size: 22px;
     width: 100%;
-}
-#index-body {
-    display: none;
+    height: auto;
 }
 
 
@@ -206,7 +207,7 @@ input[type=submit]:hover {
 
 
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .sidenav a{
         padding: 12px;
     }
@@ -265,7 +266,80 @@ input[type=submit]:hover {
 
 
 
-/* excercises page */
-.body-content-exercise {
-    margin-left: 175px;
+/***************** secondary pages ********************/
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.795);
 }
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.o-active) {background-color: #111;}
+
+ul.topnav li a.o-active {background-color: #bb6f27;}
+
+ul.topnav li.o-right {float: right;}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.o-right,
+    ul.topnav li {float: none;}
+}
+
+
+
+/***************** projects page ********************/
+#p-secondary-pages {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #997f67;
+    bottom: 0;
+    min-height: 1000px;
+}
+
+#p-inner-body {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    background-color: #f8d1ac;
+    text-align: center;
+}
+.outer-window {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+}
+.inner-window {
+    background-color: gray;
+    width: 500px;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+} 
+/***************** exercises page ********************/
+/* #e-secondary-pages {
+    
+
+}
+
+#e-inner-body {
+
+}
+ */
