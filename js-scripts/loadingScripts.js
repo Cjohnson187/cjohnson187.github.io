@@ -18,7 +18,7 @@ function change() {
 
 
 /* loading animation */
-var time;
+/* var time;
 function loading() {
     time = setTimeout(showPage, 3000);
 }
@@ -26,12 +26,13 @@ function loading() {
 function showPage() {
     document.getElementById("loader").style.display = "none";
     document.getElementById("index-body").style.display = "block";    
-    console.log("in loading"); /**************** for testing ****************/
+    console.log("in loading"); /**************** for testing ***************
 
 }
-
+ */
 
 function load() {
-    change();
-    loading();
+    setTimeout(function() {
+        change();  
+    }, 20000);
 }
