@@ -1,0 +1,104 @@
+/***************************** General styles *****************************/
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/***************************** Header section *****************************/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    border-bottom-style: groove;
+    border-bottom-color: #BC4123 ;
+    position: fixed;
+    width: 100%;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.o-active) {background-color: rgb(119, 116, 116);}
+
+ul.topnav li a.o-active {background-color:#BC4123;}
+
+ul.topnav li.o-right {float: right;}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.o-right,
+    ul.topnav li {float: none;}
+}
+
+/***************************** Body section *****************************/
+.body-index {
+    background-image: url(../images/sajad-nori-fS84AVYcxU4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    
+
+    /* temp */
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+.body-section {
+    height: 100%;
+}
+
+/*___________ profile section ___________*/
+.profile-container {
+    height: 800px;
+    border-style: dashed;
+    border-color: white;
+    margin-bottom: 30px;
+
+    /* temp */
+    padding-top: 48px;
+}
+
+/*___________ soft skills section ___________*/
+.soft-skill-container {
+    height: 500px;
+    border-style: dashed;
+    border-color: white;
+    margin-bottom: 30px;
+}
+/*___________ contact form section ___________*/
+.contact-container {
+    height: 800px;
+    border-style: dashed;
+    border-color: white;
+    margin-bottom: 30px;
+}
+
+
+
+/***************************** Footer section *****************************/
+.footer-section {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    
+    /* temp */
+    height: 75px;
+    border-top-style: dashed;
+    border-top-color: white;
+
+}

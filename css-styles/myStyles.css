@@ -351,14 +351,13 @@ ul.topnav li.o-right {float: right;}
 .desc-box {
     overflow: hidden;
     display: block;
-    width: 100%;
-    margin: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
     padding: 0;
 }
 .desc-left {
-    float: left;
-    margin-left: 30px;
-    max-width: 270px;
+    
     max-height: 100px;
     overflow: scroll;
     background-color: white;
@@ -386,9 +385,16 @@ ul.topnav li.o-right {float: right;}
     margin: 0;
     padding: 0;
     overflow: hidden;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .project-header {
     float: left;
 }
 /***************** exercises page ********************/
+
+
+
+
+
