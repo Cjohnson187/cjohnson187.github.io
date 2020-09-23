@@ -7,6 +7,10 @@ html {
 
 
 /***************************** Header section *****************************/
+.header-section {
+    height: 55px;
+    top: 0;
+}
 ul.topnav {
     list-style-type: none;
     margin: 0;
@@ -29,16 +33,53 @@ ul.topnav li a {
     text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.o-active) {background-color: rgb(119, 116, 116);}
+ul.topnav li a:hover:not(.active) {background-color: rgb(119, 116, 116);}
 
-ul.topnav li a.o-active {background-color:#BC4123;}
+ul.topnav li a.active {background-color:#BC4123;}
 
-ul.topnav li.o-right {float: right;}
+ul.topnav div.right {display: flex;}
 
 @media screen and (max-width: 600px) {
-    ul.topnav li.o-right,
+    ul.topnav div.right,
     ul.topnav li {float: none;}
+    #social-li {
+        width: 100%;
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+    .header-section {
+        height: 210px;
+    }
+    ul.topnav{
+        position: unset;
+    }
 }
+
+#social-li {
+    float: right;
+}
+
+/*___________ social media links ___________*/
+.fa {
+    padding: 10px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa-github {
+    color: white;
+}
+.fa-linkedin {
+    color: white;
+}
+.fa-facebook {
+    color: white;
+}
+
 
 /***************************** Body section *****************************/
 .body-index {
@@ -47,11 +88,6 @@ ul.topnav li.o-right {float: right;}
     background-attachment: fixed;
     background-size: cover;
     position: relative;
-    
-
-    /* temp */
-    top: 0;
-    bottom: 0;
     padding: 0;
     margin: 0;
 }
@@ -62,27 +98,33 @@ ul.topnav li.o-right {float: right;}
 /*___________ profile section ___________*/
 .profile-container {
     height: 800px;
-    border-style: dashed;
-    border-color: white;
     margin-bottom: 30px;
 
     /* temp */
-    padding-top: 48px;
+    border-style: dashed;
+    border-color: white;
+
 }
 
 /*___________ soft skills section ___________*/
 .soft-skill-container {
     height: 500px;
+    margin-bottom: 30px;
+
+    /* temp */
     border-style: dashed;
     border-color: white;
-    margin-bottom: 30px;
+
 }
 /*___________ contact form section ___________*/
 .contact-container {
     height: 800px;
+    margin-bottom: 30px;
+
+    /* temp */
     border-style: dashed;
     border-color: white;
-    margin-bottom: 30px;
+
 }
 
 
@@ -95,10 +137,9 @@ ul.topnav li.o-right {float: right;}
     text-align: center;
     color: white;
     background-color: transparent;
-    
-    /* temp */
     height: 75px;
+
+    /* temp */
     border-top-style: dashed;
     border-top-color: white;
-
 }

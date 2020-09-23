@@ -6,82 +6,58 @@
         <meta name="description" content="Chris Johnson Website.">
         <meta name="author" content="Chris Johnson">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-        <link rel="stylesheet" type="text/css" href="css-styles/myStyles.css">
+        <link rel="stylesheet" type="text/css" href="css-styles/main-styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
 
-    <!-- body -->
-    <body  onload="load()">
+    <!------------------------ body ------------------------>
+    <body class="body-index">
 
-<!--         <div id="loader"></div> just aa test may move to exercises page
- -->
-        <div id="index-body">
-            <!-- navigation bar left side -->
-            <section class="sidenav">
-                <!-- site nav buttons -->
-                    <a class="active" href="index.html"> Home </a>
-                    <a class="proj-page" href="projects/projects.html">Projects</a>
-                    <a class="ex-page" href="exercises/exercises.html">Exercises</a>
-                <!-- social media links -->
-                    <a class="fa fa-github" href="https://github.com/Cjohnson187"></a>
-                    <a class="fa fa-linkedin" href="https://www.linkedin.com/in/chris-johnson-a743a761"></a>
-                    <a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=1337006506"></a>
-            </section>  
-
-            <!-- body secction -->
-            <section class="body-content">
-
-                <div id="intro">
-                        <div id="intro-box">
-                            <img id="profile-image" src="images/new pro.jpg" alt="my picture">
-                            
-                            <p id="profile-desc">Chris Johnson<br> Software Developer</p>
-                        </div>
-
-                </div>
-
-
-                <div id="index-bottom">
-                        <div>
-                            <h2 style="color: white; text-align: center;">Do you need a softare developer?</h2>
-
-                            <div class="need">
-                                <h3 style="color: white; margin-left: 50px;">Do you need?</h3>
-                                <ul>
-                                    <li>Someone who is reliable</li>
-                                    <li>A team player</li>
-                                    <li>A positive personality</li>
-                                    <li>Someone with ambition</li>
-                                    <li>Someone with a drive to learn</li>
-                                </ul>
-                                <div>
-                                    <h4 style="color: white; margin-left: 50px;">You are in luck.</h4> <button>contact me</button>
-                                </div>
-                                <div id="contact-form">
-                                    <form action="mailto:christopherfjohnson@outlook.com" method="POST" enctype="text/plain" > <!-- name=contact-form.php" -->
-                                        <label for="fname">First Name</label>
-                                        <input type="text" id="fname" name="firstname" placeholder="You first name..">
-
-
-                                        <label for="lname">Last Name</label>
-                                        <input type="text" id="lname" name="lastname" placeholder="You last name..">
-                                        
-                                        <label for="email">Email</label>
-                                        <input type="text" id="email" name="email" placeholder="blahblah@gmail.com">
-
-                                        <label for="subject">Subject</label>
-                                        <textarea name="subject" id="subject" placeholder="Write Something.." style="height: 200px;"></textarea>
-                                        <input type="submit" value="Submit">
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+        <!------------------------ header section ------------------------>
+        <section class="header-section">
+            <ul class="topnav">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a class="projects" href="projects/projects.html">Projects</a></li>
+                <li><a class="about" href="about/about.html">About</a></li>
+                <li id="social-li">
+                    <div class="right">
+                        <a class="fa fa-github" href="https://github.com/Cjohnson187"></a>
+                        <a class="fa fa-linkedin" href="https://www.linkedin.com/in/chris-johnson-a743a761"></a>
+                        <a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=1337006506"></a>
                     </div>
-            </section>
-        </div>
-        <script src="js-scripts/loadingScripts.js" ></script>
+                </li>
+            </ul>
+        </section>
+
+        <!------------------------ body section ------------------------>
+        <section class="body-section">
+            <!-- profile section -->
+            <div class="profile-container">
+
+            </div>
+            <!-- soft skills section -->
+            <div class="soft-skill-container">
+
+            </div>
+            <!-- contact forn section  -->
+            <div class="contact-container">
+
+            </div>
+        </section>
+
+        <!-- footer section -->
+        <section class="footer-section">
+            <div>
+                <footer class="footer-bar">
+                    <p>footer</p>
+                </footer>
+            </div>
+        </section>
+
+        <!------------------------ scripts ------------------------>
+<!--         <script src="js-scripts/loadingScripts.js" ></script> -->
+
     </body>
 
 </html>
-
