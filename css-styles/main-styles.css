@@ -82,7 +82,7 @@ ul.topnav div.right {display: flex;}
 
 
 /***************************** Body section *****************************/
-.body-index {
+body {
     background-image: url(../images/sajad-nori-fS84AVYcxU4-unsplash.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -90,6 +90,7 @@ ul.topnav div.right {display: flex;}
     position: relative;
     padding: 0;
     margin: 0;
+    min-height: 1000px;
 }
 .body-section {
     height: 100%;
@@ -142,4 +143,27 @@ ul.topnav div.right {display: flex;}
     /* temp */
     border-top-style: dashed;
     border-top-color: white;
+}
+
+
+/**&&&&&&&&&&&&&&&&&&&&&&&&&&&&& about page &&&&&&&&&&&&&&&&&&&&&&&&&&&&&**/
+
+/***************************** body section *****************************/
+
+.about-body-section {
+    min-height: 1000px;
+}
+
+
+
+
+
+
+/**&&&&&&&&&&&&&&&&&&&&&&&&&&&&& projects page &&&&&&&&&&&&&&&&&&&&&&&&&&&&&**/
+
+/***************************** body section *****************************/
+
+
+.project-body-section {
+    min-height: 1000px;
 }
