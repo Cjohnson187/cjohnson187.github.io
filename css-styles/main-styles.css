@@ -3,15 +3,20 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 
 /***************************** Header section *****************************/
 .header-section {
-    height: 55px;
     top: 0;
+    position: fixed;
+    box-sizing: inherit;
+    width: 100%;
 }
 ul.topnav {
+    box-sizing: inherit;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -19,8 +24,13 @@ ul.topnav {
     background-color: transparent;
     border-bottom-style: groove;
     border-bottom-color: #BC4123 ;
-    position: fixed;
     width: 100%;
+    position: fixed;
+
+    /* test */
+    font: 25px 'Times New Roman', Times, serif;
+    float: left;
+
 }
 
 ul.topnav li {float: left;}
@@ -48,11 +58,12 @@ ul.topnav div.right {display: flex;}
         display: flex;
         justify-content: center;
     }
-    .header-section {
-        height: 210px;
-    }
     ul.topnav{
         position: unset;
+        background-color: black;
+    }
+    .body-section {
+        margin-top: 250px !important;
     }
 }
 
@@ -63,7 +74,6 @@ ul.topnav div.right {display: flex;}
 /*___________ social media links ___________*/
 .fa {
     padding: 10px;
-    width: 15px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
@@ -88,11 +98,19 @@ body {
     background-attachment: fixed;
     background-size: cover;
     position: relative;
+    top: 0;
     padding: 0;
     margin: 0;
     min-height: 1000px;
+    font: 16px 'Times New Roman', Times, serif;
+
+
+    /* test */
+    display: flex;
+    flex-direction: column;
 }
 .body-section {
+    margin-top: 72px;
     height: 100%;
 }
 
@@ -104,7 +122,15 @@ body {
     /* temp */
     border-style: dashed;
     border-color: white;
+    align-content: center;
+}
 
+#inner-profile-frame {
+    margin: 20px 30px;
+    height: auto;
+    /* temp */
+    border-style: dashed;
+    border-color: white;
 }
 
 /*___________ soft skills section ___________*/
@@ -145,6 +171,8 @@ body {
     /* temp */
     border-top-style: dashed;
     border-top-color: white;
+    font: 14px 'Times New Roman', Times, serif;
+
 }
 
 
