@@ -9,21 +9,29 @@ html {
 
 
 /***************************** Header section *****************************/
-
+.header-section {
+    top: 0;
+    position: fixed;
+    box-sizing: inherit;
+    width: 100%;
+}
 ul.topnav {
     box-sizing: inherit;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: transparent;
     border-bottom-style: groove;
     border-bottom-color: #BC4123 ;
     width: 100%;
-    background-color: black;
     position: fixed;
+    background-color: black;
+    z-index: 10000;
 
     /* test */
     font: 25px 'Times New Roman', Times, serif;
+    float: left;
 
 }
 
@@ -53,8 +61,11 @@ ul.topnav div.right {display: flex;}
         justify-content: center;
     }
     ul.topnav{
-        position: relative;
+        position: unset;
         background-color: black;
+    }
+    .body-section {
+        margin-top: 250px !important;
     }
 }
 
@@ -89,73 +100,83 @@ body {
     background-attachment: fixed;
     background-size: cover;
     position: relative;
-    width: 100%;
-    height: auto;
     top: 0;
     padding: 0;
     margin: 0;
+    height: auto;
+/*     min-height: 1000px; */
     font: 22px 'Times New Roman', Times, serif;
-}
 
-.body-section {
-    height: 100%;
+
+    /* test */
     display: flex;
     flex-direction: column;
-
+}
+.body-section {
+    margin-top: 72px;
+    height: 100%;
 }
 
 /*___________ profile section ___________*/
-#profile-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+.profile-container {
+    height: 1000px;
+    margin-bottom: 30px;
+
+    /* temp */
+    border-style: dashed;
+    border-color: white;
+    align-content: center;
 }
 
-#profile-inner {
-    max-width: 800px;
-    max-height: 600px;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    margin-top: 15%;
+#inner-profile-frame {
 
-    margin-bottom: 15%;
-    margin-left: auto;
-    margin-right: auto;
-
-    text-align: center;
-
-    border-radius: 50px;
-}
-#inner-left {
+    position: relative;
     box-sizing: inherit;
-    max-width: 300px;
-    width: 40%;
-    float: left;
-    margin: 5% 5%;
-    border-style: groove;
-    background-color: azure;
-    border-radius: 50px;
+    display: flex;
+    width: 500px;
+    margin: 30px 50px;
+    
 
+    /* temp */
+    border-style: dashed;
+    border-color: white;
 }
-#inner-right {
-    width: 50%;
+#profile-left {
+    background-image: url("images/new pro.jpg");
+    background-size: cover;
     float: left;
-    background-color: antiquewhite;
-    border-style: dotted;
-    border-color: black;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 20px;
-    margin-left: 20px;
+    height: 300px;
+    width: 50%;
+}
+#profile-right {
+    box-sizing: border-box;
+    max-width: 50%;
+    float: left;
+
 }
 
 
 
 /*___________ soft skills section ___________*/
+.soft-skill-container {
+    height: 500px;
+    margin-bottom: 30px;
 
+    /* temp */
+    border-style: dashed;
+    border-color: white;
+
+}
 /*___________ contact form section ___________*/
+.contact-container {
+    height: 800px;
+    margin-bottom: 30px;
+
+    /* temp */
+    border-style: dashed;
+    border-color: white;
+
+}
 
 
 
