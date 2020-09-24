@@ -137,13 +137,82 @@ body {
     width: 100%;
     text-align: center;
     color: white;
-    background-color: transparent;
-    height: 75px;
+    background-color: rgb(20, 20, 20);
+    height: 286px;
+    opacity: .7;
+    overflow: hidden;
 
     /* temp */
     border-top-style: dashed;
     border-top-color: white;
 }
+
+
+
+.inner-footer {
+    margin: 30px 90px;
+    height: 220px;
+    display: block;
+    opacity: unset !important;
+    overflow: hidden;
+
+    /* temp */
+    border-style: dashed;
+    border-color: white;
+}
+
+.f-top {
+    width: 100%;
+    
+    height: 80%;
+}
+.f-left-2 {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+.f-left-2 p {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    margin: 20px 45px;
+    overflow: hidden;
+
+}
+
+.f-left-1 {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+.f-left-1 p {
+    margin: 20px 45px;
+    overflow: hidden;
+}
+.f-right {
+    float: right;
+    width: 40%;
+}
+.f-right li {
+    float: right;
+    width: 50%;
+    height: 80%;
+    list-style-type: none;
+}
+.f-right H3 {
+    text-align: center;
+    height: 20%;
+}
+.f-bottom {
+    width: 100%;
+    bottom: 0;
+    height: 20%;
+    border-color: aqua;
+    border-style: groove;
+    position: relative;
+}
+
 
 
 /**&&&&&&&&&&&&&&&&&&&&&&&&&&&&& about page &&&&&&&&&&&&&&&&&&&&&&&&&&&&&**/
