@@ -142,18 +142,52 @@ body {
 #inner-right {
     width: 50%;
     float: left;
-    background-color: antiquewhite;
-    border-style: dotted;
-    border-color: black;
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 20px;
     margin-left: 20px;
+    
+    /* temp */
+    border-style: dashed;
+    border-color: black;
+}
+
+/*___________ need section ___________*/
+
+#need h3 {
+    color: white; 
+    text-align: center;
+    margin-bottom: 50px;
+}
+#need ul {
+    color: white;
+    text-align: center;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+#need ul li {
+    margin-bottom: 20px;
+}
+#contact-me {
+    display: flex;
+    justify-content: center;
+}
+#contact-me h4 {
+    color: white;
+    margin-right: 10vw;
+}
+#contact-me button {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 4vw;
+    min-height: 15px;
+    max-height: 25px;
 }
 
 
 
 /*___________ soft skills section ___________*/
+
 
 /*___________ contact form section ___________*/
 
