@@ -6,82 +6,172 @@
         <meta name="description" content="Chris Johnson Website.">
         <meta name="author" content="Chris Johnson">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-        <link rel="stylesheet" type="text/css" href="css-styles/myStyles.css">
+        <link rel="stylesheet" type="text/css" href="css-styles/main-styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
 
-    <!-- body -->
-    <body  onload="load()">
+    <!------------------------ body ------------------------>
+    <body class="body-index">
 
-<!--         <div id="loader"></div> just aa test may move to exercises page
- -->
-        <div id="index-body">
-            <!-- navigation bar left side -->
-            <section class="sidenav">
-                <!-- site nav buttons -->
-                    <a class="active" href="index.html"> Home </a>
-                    <a class="proj-page" href="projects/projects.html">Projects</a>
-                    <a class="ex-page" href="exercises/exercises.html">Exercises</a>
-                <!-- social media links -->
-                    <a class="fa fa-github" href="https://github.com/Cjohnson187"></a>
-                    <a class="fa fa-linkedin" href="https://www.linkedin.com/in/chris-johnson-a743a761"></a>
-                    <a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=1337006506"></a>
-            </section>  
+        <!------------------------ header section ------------------------>
+        <section class="header-section">
+            <ul class="topnav">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a class="projects" href="projects/projects.html">Projects</a></li>
+                <li><a class="about" href="about/about.html">About</a></li>
+                <li id="social-li">
+                    <div class="right">
+                        <a class="fa fa-github" href="https://github.com/Cjohnson187"></a>
+                        <a class="fa fa-linkedin" href="https://www.linkedin.com/in/chris-johnson-a743a761"></a>
+                        <a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=1337006506"></a>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-            <!-- body secction -->
-            <section class="body-content">
+        <!------------------------ body section ------------------------>
+        <section class="body-section">
 
-                <div id="intro">
-                        <div id="intro-box">
-                            <img id="profile-image" src="images/new pro.jpg" alt="my picture">
-                            
-                            <p id="profile-desc">Chris Johnson<br> Software Developer</p>
-                        </div>
+
+            <!-- profile section -->
+            <section id="profile-container">
+                <div id="profile-inner">
+                    <img id="inner-left" src="images/new pro.jpg" alt="me">
+                    <div id="inner-right">
+                        <p style="color: white;">Hello, My name is Chris. I Graduated with a B.S. from MSU Denver in spring of 2020.</p>
+                        <p style="color: white;">Nice ot meet you!</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- need section -->
+            <section id="need-container">
+                <h2 style="color: white; text-align: center; margin-bottom: 50px;">Do you need a softare developer?</h2>
+
+                <div id="need">
+                    <h3>Are you looking for...</h3>
+                    <ul>
+                        <li>someone who is reliable?</li>
+                        <li>a team player?</li>
+                        <li>a positive personality?</li>
+                        <li>someone with ambition?</li>
+                        <li>someone with a drive to learn?</li>
+                    </ul>s
+                </div>
+
+                <div id="contact-me">
+                    <h4>You are in luck.</h4> <button>contact me</button>
+                </div>
+
+            </section>
+
+
+            <!-- soft skills section -->
+            <section class="soft-skill-container">
+
+                <h3>I have experience with...</h3>
+                <div id="skill-inner">
+                    <div>Java</div>
+                    <div>Python</div>
+                    <div>C</div>
+
+                    <div>C++</div>
+                    <div>Kotlin</div>
+                    <div>HTML</div>
+
+                    <div>CSS</div>
+                    <div>Javascript</div>
+                    <div>SQL</div>
+
+
+                    <div>CI / CD</div>
+                    <div>Version control</div>
+                    <div>Unit testing</div>
+
+                    <div>Agile development</div>
+                    <div>Machine learning</div>
+                    <div>Static / Dynamic analysis</div>
+
+
+                    <div>Self motivated</div>
+                    <div>Client faced customer service</div>
+                    <div>Communication</div>
 
                 </div>
 
 
-                <div id="index-bottom">
-                        <div>
-                            <h2 style="color: white; text-align: center;">Do you need a softare developer?</h2>
-
-                            <div class="need">
-                                <h3 style="color: white; margin-left: 50px;">Do you need?</h3>
-                                <ul>
-                                    <li>Someone who is reliable</li>
-                                    <li>A team player</li>
-                                    <li>A positive personality</li>
-                                    <li>Someone with ambition</li>
-                                    <li>Someone with a drive to learn</li>
-                                </ul>
-                                <div>
-                                    <h4 style="color: white; margin-left: 50px;">You are in luck.</h4> <button>contact me</button>
-                                </div>
-                                <div id="contact-form">
-                                    <form action="mailto:christopherfjohnson@outlook.com" method="POST" enctype="text/plain" > <!-- name=contact-form.php" -->
-                                        <label for="fname">First Name</label>
-                                        <input type="text" id="fname" name="firstname" placeholder="You first name..">
-
-
-                                        <label for="lname">Last Name</label>
-                                        <input type="text" id="lname" name="lastname" placeholder="You last name..">
-                                        
-                                        <label for="email">Email</label>
-                                        <input type="text" id="email" name="email" placeholder="blahblah@gmail.com">
-
-                                        <label for="subject">Subject</label>
-                                        <textarea name="subject" id="subject" placeholder="Write Something.." style="height: 200px;"></textarea>
-                                        <input type="submit" value="Submit">
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
             </section>
-        </div>
+            
+            <!-- contact forn section  -->
+            <section class="contact-container">
+
+                <div id="contact-form">
+                    <form action="mailto:christopherfjohnson@outlook.com" method="POST" enctype="text/plain" > <!-- name=contact-form.php" -->
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="You first name..">
+
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="You last name..">
+                        
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="blahblah@gmail.com">
+
+                        <label for="subject">Subject</label>
+                        <textarea name="subject" id="subject" placeholder="Write Something.." style="height: 200px;"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                
+            </section>
+
+
+
+
+        </section>
+
+
+
+
+        
+        <!-- footer section -->
+        <section class="footer-section">
+            <div class="inner-footer">
+                <div class="f-top">
+
+                    <div class="f-left-1"><p>I am a fairly new developer so if you have any tips, advice or helpful resources, dont hesitate to contact me!</p><p> Thanks for checking out my website!</p></div>
+
+                    <div class="f-left-2"><p>This website is essentially my resume but i also had quite a bit of fun learning html/css/js!</p></div>
+
+                    <div class="f-right">
+                        <H3>Resources</H3>
+                        <ul>
+                            <li><a href="https://www.w3schools.com/">w3schools</a></li>
+                            <li><a href="https://unsplash.com/">Upsplash</a></li>
+                            <li><a href="https://pages.github.com/">Github Pages</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="https://www.cloudflare.com/">Cloudflare</a></li>
+                            <li><a href="#">Google Fonts</a></li>
+                            <li><a href="#">Google APIs</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="f-bottom">
+                    Author -> Chris Johnson
+                </div>
+
+            </div>
+        </section>
+
+        <!------------------------ scripts ------------------------>
         <script src="js-scripts/loadingScripts.js" ></script>
+
     </body>
 
 </html>
-

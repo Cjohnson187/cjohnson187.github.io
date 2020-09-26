@@ -1,0 +1,290 @@
+/***************************** General styles *****************************/
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/***************************** Header section *****************************/
+.header-section {
+    top: 0;
+    position: fixed;
+    box-sizing: inherit;
+    width: 100%;
+}
+ul.topnav {
+    box-sizing: inherit;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    border-bottom-style: groove;
+    border-bottom-color: #BC4123 ;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    z-index: 10000;
+
+    /* test */
+    font: 25px 'Times New Roman', Times, serif;
+    float: left;
+
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: rgb(119, 116, 116);}
+
+ul.topnav li a.active {background-color:#BC4123;}
+
+ul.topnav div.right {display: flex;}
+
+@media screen and (max-width: 600px) {
+    ul.topnav div.right,
+    ul.topnav li {float: none;}
+    #social-li {
+        width: 100%;
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+    ul.topnav{
+        position: unset;
+        background-color: black;
+    }
+    .body-section {
+        margin-top: 250px !important;
+    }
+}
+
+#social-li {
+    float: right;
+}
+
+/*___________ social media links ___________*/
+.fa {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa-github {
+    color: white;
+}
+.fa-linkedin {
+    color: white;
+}
+.fa-facebook {
+    color: white;
+}
+
+
+/***************************** Body section *****************************/
+body {
+    background-image: url(../images/sajad-nori-fS84AVYcxU4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    height: auto;
+/*     min-height: 1000px; */
+    font: 22px 'Times New Roman', Times, serif;
+
+
+    /* test */
+    display: flex;
+    flex-direction: column;
+}
+.body-section {
+    margin-top: 72px;
+    height: 100%;
+}
+
+/*___________ profile section ___________*/
+.profile-container {
+    height: 1000px;
+    margin-bottom: 30px;
+
+    /* temp */
+    border-style: dashed;
+    border-color: white;
+    align-content: center;
+}
+
+#inner-profile-frame {
+
+    position: relative;
+    box-sizing: inherit;
+    display: flex;
+    width: 500px;
+    margin: 30px 50px;
+    
+
+    /* temp */
+    border-style: dashed;
+    border-color: white;
+}
+#profile-left {
+    background-image: url("images/new pro.jpg");
+    background-size: cover;
+    float: left;
+    height: 300px;
+    width: 50%;
+}
+#profile-right {
+    box-sizing: border-box;
+    max-width: 50%;
+    float: left;
+
+}
+
+
+
+/*___________ soft skills section ___________*/
+.soft-skill-container {
+    height: 500px;
+    margin-bottom: 30px;
+
+    /* temp */
+    border-style: dashed;
+    border-color: white;
+
+}
+/*___________ contact form section ___________*/
+.contact-container {
+    height: 800px;
+    margin-bottom: 30px;
+
+    /* temp */
+    border-style: dashed;
+    border-color: white;
+
+}
+
+
+
+/***************************** Footer section *****************************/
+.footer-section {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgb(20, 20, 20);
+    height: 286px;
+    opacity: .7;
+    overflow: hidden;
+
+    /* temp */
+    border-top-style: dashed;
+    border-top-color: white;
+    font: 14px 'Times New Roman', Times, serif;
+
+}
+
+
+
+.inner-footer {
+    margin: 30px 90px;
+    height: 220px;
+    display: block;
+    opacity: unset !important;
+    overflow: hidden;
+
+    /* temp */
+    border-style: dashed;
+    border-color: white;
+}
+
+.f-top {
+    width: 100%;
+    
+    height: 80%;
+}
+.f-left-2 {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+.f-left-2 p {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    margin: 20px 45px;
+    overflow: hidden;
+
+}
+
+.f-left-1 {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+.f-left-1 p {
+    margin: 20px 45px;
+    overflow: hidden;
+}
+.f-right {
+    float: right;
+    width: 40%;
+}
+.f-right li {
+    float: right;
+    width: 50%;
+    height: 80%;
+    list-style-type: none;
+}
+.f-right H3 {
+    text-align: center;
+    height: 20%;
+}
+.f-bottom {
+    width: 100%;
+    bottom: 0;
+    height: 20%;
+    border-color: aqua;
+    border-style: groove;
+    position: relative;
+}
+
+
+
+/**&&&&&&&&&&&&&&&&&&&&&&&&&&&&& about page &&&&&&&&&&&&&&&&&&&&&&&&&&&&&**/
+
+/***************************** body section *****************************/
+
+.about-body-section {
+    min-height: 1000px;
+}
+
+
+
+
+
+
+/**&&&&&&&&&&&&&&&&&&&&&&&&&&&&& projects page &&&&&&&&&&&&&&&&&&&&&&&&&&&&&**/
+
+/***************************** body section *****************************/
+
+
+.project-body-section {
+    min-height: 1000px;
+}
