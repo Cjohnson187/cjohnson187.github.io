@@ -85,7 +85,7 @@ ul.topnav div.right {display: flex;}
         max-width: 155px !important;
     }
     #inner-right {
-        overflow: scroll;
+        overflow: unset;  /* this doesnt do anything but i was using it to scroll */
         width: 75% !important;
         
     }
@@ -144,6 +144,8 @@ body {
     align-items: center;
     width: 100%;
     height: 100vh;
+    border-bottom: black;
+    border-bottom-style: ridge;
 }
 
 #profile-inner {
@@ -183,10 +185,6 @@ body {
     margin-bottom: auto;
     margin-right: 20px;
     margin-left: 20px;
-    
-    /* temp */
-    border-style: dashed;
-    border-color: black;
 }
 
 /*___________ need section ___________*/
@@ -194,6 +192,17 @@ body {
 #need-container {
     height: 100vh;
     width: 100%;
+    border-bottom-style: ridge;
+    border-bottom-color: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#inner-need {
+    margin-top: auto;
+    margin-bottom: auto;
+    
 }
 
 #need h3 {
@@ -232,30 +241,28 @@ body {
 #soft-skill-container {
     height: 100vh;
     margin: 30px 0px;
-    border-top-style: ridge;
-    border-top-color: rgb(54, 54, 54);
-    background-color:  rgb(54, 54, 54, .3);
+    border-bottom-style: ridge;
+    border-bottom-color: black;
+    display: flex;
+    flex-direction: column;
+
 }
 
 #soft-skill-container h3 {
     color: white;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
-#skill-inner div::before { 
-    content: "";
-    background-color: black;
-    opacity: .5;
-}
 
 #skill-inner {
     display: grid;
     grid-template-columns: auto auto auto ;
     color: aliceblue;
+    margin: 20px 60px;
 }
 #skill-inner div {
-    padding: 20px 0px;
+    padding: 10px 5px;
     text-align: center;
     font-size: 2vw;
     background-color: rgba(224, 118, 32);
@@ -301,14 +308,13 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
-.contact-form {
+#contact-form {
     border-radius: 5px;
-    background-color: #f2f2f2;
     padding: 20px;
     margin: 20px;
-}
-.contact-form label {
-    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 650px;
 }
 
 
@@ -374,6 +380,9 @@ input[type=submit]:hover {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
+.f-left p {
+    margin: 30px 50px; 
 }
 
 .f-right {
