@@ -36,3 +36,7 @@ function load() {
         change();  
     }, 20000);
 }
+
+function menuButton(x){
+    x.classList.toggle("change");
+}

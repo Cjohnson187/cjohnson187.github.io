@@ -10,9 +10,6 @@ html {
 /***************************** index body wrapper*****************************/
 
 
-.body-index {
-    scroll-behavior: auto;
-}
 
 /***************************** Header section *****************************/
 
@@ -30,7 +27,6 @@ ul.topnav {
 
     /* test */
     font: 25px 'Times New Roman', Times, serif;
-
 }
 
 ul.topnav li {float: left;}
@@ -42,38 +38,93 @@ ul.topnav li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 ul.topnav li a:hover:not(.active) {background-color: rgb(119, 116, 116);}
 
 ul.topnav li a.active {background-color:#BC4123;}
 
 ul.topnav div.right {display: flex;}
 
+.social-li { float: right !important; }
+
+.menu-button {
+    display: none;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    float: left;
+}
+.menu-line1 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    transition: 0.4s;
+}
+.menu-line2 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    transition: 0.4s;
+}
+.menu-line3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+.menu-content a {
+    float: none;
+}
+.menu-content {
+    display: none;
+    transition: 0.4s;
+}
+.change .menu-content{
+    display: block;
+    transition: 0.4s;
+}
+.change .menu-line1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    transition: 0.4s;
+}
+.change .menu-line2{
+    opacity: 0;
+    transition: 0.4s;
+}
+.change .menu-line3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    transition: 0.4s;
+}
+
+
+
+
+/***************************** Responsive design settings *****************************/
 @media screen and (max-width: 900px) {
     #skill-inner div {
         font-size: 16px;
     }
 }
-
-
 @media screen and (max-width: 600px) {
     ul.topnav div.right,
     ul.topnav li {float: none;}
-    #social-li {
-        width: 100%;
-        float: none;
+    .social-li {
         display: flex;
         justify-content: center;
     }
     ul.topnav{
         position: relative;
         background-color: black;
+        overflow: hidden;
     }
     #profile-inner {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
     }
     #inner-left {
         max-height: 166px;
@@ -82,16 +133,19 @@ ul.topnav div.right {display: flex;}
     #inner-right {
         overflow: unset;  /* this doesnt do anything but i was using it to scroll */
         width: 75% !important;
-        
     }
     #contact-form {
         height: 450px;
     }
+    .active { display: none !important; }
+    .projects { display: none !important; }
+    .about { display: none !important; }
+    .menu-button {
+        display: inline-block;
+        cursor: pointer;
+    }
 }
 
-#social-li {
-    float: right;
-}
 
 /*___________ social media links ___________*/
 .fa {
@@ -132,8 +186,18 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-
 }
+
+/*___________ body of index ___________*/
+
+.body-index { scroll-behavior: auto; }
+
+
+/*___________ body of projects ___________*/
+
+
+/*___________ body of about ___________*/
+
 
 /*___________ profile section ___________*/
 #profile-container {
@@ -145,7 +209,6 @@ body {
     border-bottom: black;
     border-bottom-style: ridge;
 }
-
 #profile-inner {
     max-width: 600px;
     max-height: 400px;
@@ -182,6 +245,7 @@ body {
     margin-left: 20px;
 }
 
+
 /*___________ need section ___________*/
 
 #need-container {
@@ -193,13 +257,11 @@ body {
     justify-content: center;
     align-content: center;
 }
-
 #inner-need {
     margin-top: auto;
     margin-bottom: auto;
     
 }
-
 #need h3 {
     color: white; 
     text-align: center;
@@ -230,7 +292,6 @@ body {
 }
 
 
-
 /*___________ soft skills section ___________*/
 
 #soft-skill-container {
@@ -242,15 +303,11 @@ body {
     align-content: center;
     justify-content: center;
     flex-direction: column;
-
 }
-
 #soft-skill-container h3 {
     color: white;
     text-align: center;
 }
-
-
 #skill-inner {
     display: grid;
     grid-template-columns: auto auto auto ;
@@ -268,9 +325,6 @@ body {
 }
 
 
-
-
-
 /*___________ contact form section ___________*/
 #contact-container {
     margin: 50px 30px;
@@ -278,9 +332,7 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
-
  }
-
 
 label {
     color: white;
@@ -321,7 +373,6 @@ input[type=submit]:hover {
     margin-top: auto;
     margin-bottom: auto;
     max-width: 650px;
-    
 }
 
 
@@ -358,9 +409,6 @@ input[type=submit]:hover {
     margin-left: auto;
     overflow: hidden;
 }
-
-
-
 .f-left {
     float: left;
     width: 50%;
@@ -373,7 +421,6 @@ input[type=submit]:hover {
 .f-left p {
     margin: 30px 50px; 
 }
-
 .f-right {
     float: right;
     width: 50%;
@@ -411,7 +458,6 @@ input[type=submit]:hover {
 .about-body-section {
     min-height: 1000px;
 }
-
 
 
 
