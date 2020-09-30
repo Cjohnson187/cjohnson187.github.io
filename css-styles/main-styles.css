@@ -14,14 +14,6 @@ html {
     scroll-behavior: auto;
 }
 
-#body-wrap{
-    
-}
-
-section {
-}
-
-
 /***************************** Header section *****************************/
 
 ul.topnav {
@@ -57,6 +49,13 @@ ul.topnav li a.active {background-color:#BC4123;}
 
 ul.topnav div.right {display: flex;}
 
+@media screen and (max-width: 900px) {
+    #skill-inner div {
+        font-size: 16px;
+    }
+}
+
+
 @media screen and (max-width: 600px) {
     ul.topnav div.right,
     ul.topnav li {float: none;}
@@ -71,10 +70,6 @@ ul.topnav div.right {display: flex;}
         background-color: black;
     }
     #profile-inner {
-        /* display: block !important ;
-        right: auto !important;
-        left: auto !important;
-        width: 90% !important;  */
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -88,6 +83,9 @@ ul.topnav div.right {display: flex;}
         overflow: unset;  /* this doesnt do anything but i was using it to scroll */
         width: 75% !important;
         
+    }
+    #contact-form {
+        height: 450px;
     }
 }
 
@@ -127,7 +125,7 @@ body {
     top: 0;
     padding: 0;
     margin: 0;
-    font: 22px 'Times New Roman', Times, serif;
+    font: 3vh 'Times New Roman', Times, serif;
 }
 
 .body-section {
@@ -167,9 +165,6 @@ body {
 #inner-left {
     box-sizing: inherit;
     max-width: 230px;
-    /* max-height: 550px;
-    height: 100%;
-    width: 100%; */
     width: 40%;
     float: left;
     margin: 10% 5%;
@@ -241,8 +236,11 @@ body {
 #soft-skill-container {
     height: 100vh;
     border-top-style: ridge;
+    border-bottom-style: ridge;
     box-sizing: border-box;
     display: flex;
+    align-content: center;
+    justify-content: center;
     flex-direction: column;
 
 }
@@ -266,7 +264,7 @@ body {
     font-size: 2vw;
     background-color: rgba(224, 118, 32);
     overflow: auto;
-    margin: 30px 15px;
+    margin: 10px 5px;
 }
 
 
@@ -277,7 +275,11 @@ body {
 #contact-container {
     margin: 50px 30px;
     height: 100vh;
-}
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+ }
 
 
 label {
@@ -308,12 +310,18 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 #contact-form {
+    box-sizing: border-box;
+    display: flex;
     border-radius: 5px;
+    height: auto;
     padding: 20px;
     margin: 20px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     max-width: 650px;
+    
 }
 
 
@@ -342,10 +350,6 @@ input[type=submit]:hover {
     height: 100%;
     overflow: hidden;
     padding-top: 20px;
-    /* temp */
-    /* border-style: dashed;
-    border-color: white; */
-
 }
 .f-top {
     width: 80%;
@@ -353,23 +357,9 @@ input[type=submit]:hover {
     margin-right: auto;
     margin-left: auto;
     overflow: hidden;
-
 }
 
-/* .f-left-2 {
-    float: left;
-    width: 30%;
-    height: 100%;
-}
-.f-left-2 p {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    text-align: center;
-    margin: 20px 45px;
-    overflow: hidden;
 
-} */
 
 .f-left {
     float: left;
