@@ -470,6 +470,10 @@ input[type=submit]:hover {
 /***************************** body section *****************************/
 
 
-.project-body-section {
-    min-height: 1000px;
+#project-body-section {
+    height: 100vh;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(32, 32, 32);
 }
