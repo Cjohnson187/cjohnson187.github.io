@@ -152,7 +152,6 @@ ul.topnav div.right {display: flex;}
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
     border-radius: 50%;
 }
 
@@ -206,9 +205,9 @@ body {
     align-items: center;
     width: 100%;
     height: 100vh;
-    border-bottom: black;
     border-bottom-style: ridge;
 }
+
 #profile-inner {
     max-width: 600px;
     max-height: 400px;
@@ -224,6 +223,8 @@ body {
     text-align: center;
 
     border-radius: 50px;
+
+
 }
 #inner-left {
     box-sizing: inherit;
@@ -320,7 +321,6 @@ body {
     text-align: center;
     font-size: 2vw;
     background-color: rgba(224, 118, 32);
-    overflow: auto;
     margin: 10px 5px;
 }
 
@@ -420,6 +420,7 @@ input[type=submit]:hover {
 }
 .f-left p {
     margin: 30px 50px; 
+    max-height: 120px;
 }
 .f-right {
     float: right;
