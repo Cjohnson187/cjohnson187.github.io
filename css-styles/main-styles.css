@@ -508,16 +508,17 @@ input[type=submit]:hover {
     box-sizing: border-box;
 }
 
-.project-window {
+#project-window {
     box-sizing: border-box;
     height: 100%;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.project-window > div {
+#project-window > div {
     display: flex;
     margin: 10px;
     text-align: center;
@@ -526,23 +527,12 @@ input[type=submit]:hover {
     max-width: 150px;
     max-height: 150px;
     border-radius: 30px;
+    cursor: pointer;
+
 
     /* temp */
     background-color: white;
 }
-/* .project-window > div::before {
-    content: "";
-    background-color: rgb(36, 35, 35, .5);
-    z-index: 10;
-    height: 100%;
-    width: 100%;
-    display: block;
-    border-radius: 29px;
-} */
-/* .project-window > div:hover::before {
-    display: none;
-} */
-
 
 @media screen and (max-width: 600px) {
     #project-body-section {
@@ -555,12 +545,32 @@ input[type=submit]:hover {
     background-image: url(../images/webpage_screen);
     background-repeat: no-repeat;
     background-size: cover;
-    cursor: pointer;
 }
 
-.expanded1 .webpage-screen {
-    width: 100%;
-    max-width: unset;
-    max-height: unset;
+.expanded {
+    width: 100% !important;
+    max-width: 400px !important;
+    max-height: 400px !important;
+    height: 60vh !important;
+}
 
+
+/* inside element to try querry selector */
+.inside {
+    height: 50%; 
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: auto;
+    background-color: rgb(36, 35, 35, .7);
+    display: none;
+    color: white;
+    font-size: 2vw;
+    overflow: hidden;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}   
+.inside .fa {
+    background-color: white;
+    color:  #BC4123;
+    font-size: 5vh;
 }
