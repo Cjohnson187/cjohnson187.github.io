@@ -29,8 +29,14 @@ function menuButton(x){
     x.classList.toggle("change");
 }
 
-function expand1() {
-    y = document.getElementsByClassName("webpage-screen");
-    y.classList.toggle("expanded1")
+function expand(y) {
+    y.classList.toggle("expanded");
+    var inner = y.querySelector("div");
+    if (inner.style.display === "block") {
+        inner.style.display = "none";
+    }
+    else {
+        inner.style.display = "block";
 
+    }    
 }
