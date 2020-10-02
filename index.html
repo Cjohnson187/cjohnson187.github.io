@@ -25,9 +25,9 @@
                             <div class="menu-line2" style="margin: 6px 0;"></div>
                             <div class="menu-line3"></div>
                             <div class="menu-content">
-                                <a href="#">Active</a> 
-                                <a href="#">Projects</a>
-                                <a href="#">About</a>
+                                <a class="active" href="#">Active</a> 
+                                <a href="projects/projects.html">Projects</a>
+                                <a href="about/about.html">About</a>
                             </div>
                         </div>
                     </li>
@@ -118,7 +118,8 @@
                 
                 <!-- contact forn section  -->
                 <section id="contact-container">
-
+                    <div class="contact-header"><p>Send me an E-mail with the form below.</p></div>
+                    <div id="line-in-header"></div>
                     <div id="contact-form">
                         <form action="mailto:" method="POST" enctype="text/plain" > <!-- name=contact-form.php" -->
                             <label for="fname">First Name</label>
@@ -163,25 +164,23 @@
                         </div>
 
                         <div class="f-right">
-                            <H3>Resources I used-</H3>
-                            <ul>
-                                <li><a href="https://www.w3schools.com/">w3schools</a></li>
-                                <li><a href="https://unsplash.com/">Upsplash</a></li>
-                                <li><a href="https://pages.github.com/">Github Pages</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="https://www.cloudflare.com/">Cloudflare</a></li>
-                                <li><a href="#">Google Fonts</a></li>
-                                <li><a href="#">Google APIs</a></li>
-                            </ul>
-
+                            <H3 class="footer-resources">Resources I used</H3>
+                            <div class="foot-list">
+                                <ul>
+                                    <li><a href="https://www.w3schools.com/">w3schools</a></li>
+                                    <li><a href="https://unsplash.com/">Upsplash</a></li>
+                                    <li><a href="https://pages.github.com/">Github Pages</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="https://www.cloudflare.com/">Cloudflare</a></li>
+                                    <li><a href="#">Google Fonts</a></li>
+                                    <li><a href="#">Google APIs</a></li>
+                                </ul>
+                            </div>
                         </div>
-
                     </div>
-
                 </div>
             </section>
-
         </div>
 
         <!------------------------ scripts ------------------------>
