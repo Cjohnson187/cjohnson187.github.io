@@ -7,6 +7,10 @@ html {
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
 /***************************** index body wrapper*****************************/
 
 
@@ -318,6 +322,7 @@ body {
 }
 #skill-inner div {
     padding: 10px 5px;
+    border-radius: 2vw;
     text-align: center;
     font-size: 2vw;
     background-color: rgba(224, 118, 32);
@@ -541,8 +546,64 @@ input[type=submit]:hover {
 }
 
 /*___________ individual projects ___________*/
-.webpage-screen {
+#webpage-screen {
     background-image: url(../images/webpage_screen);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#captcha {
+    background-image: url(../images/captcha1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#git-confused {
+    background-image: url(../images/git-confused1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ipps {
+    background-image: url(../images/ipps_sql_java.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#lex-syn {
+    background-image: url(../images/lex_syn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#three-class {
+    background-image: url(../images/ml_3classifiers_py.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#oop {
+    background-image: url(../images/oop_java.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sched {
+    background-image: url(../images/simulated_sched_py.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#skynet {
+    background-image: url(../images/skynet_ml_py.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sudoku_hs {
+    background-image: url(../images/sudoku_hs.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#expert-sys {
+    background-image: url(../images/expert_sys_prolog.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#hot-cold {
+    background-image: url(../images/hot_cold_kotlin.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -564,8 +625,8 @@ input[type=submit]:hover {
     background-color: rgb(36, 35, 35, .7);
     display: none;
     color: white;
-    font-size: 2vw;
-    overflow: hidden;
+    font-size: 2vh;
+    overflow: scroll;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }   
