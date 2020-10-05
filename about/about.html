@@ -12,7 +12,7 @@
     </head>
 
     <!------------------------ body ------------------------>
-    <body class="body-about">
+    <body id="body-about">
 
         <!------------------------ header section ------------------------>
         <section class="header-section">
@@ -44,42 +44,64 @@
 
         <!------------------------ body section ------------------------>
         <section class="about-body-section">
-            <!-- profile section -->
+            <div class="about-containers">
+                <div>
+                    <H2 style="text-align: center;">About Me</H2>
+                </div>
+                <div id="inner-about">
+                    <div id="media-container">
+                        <div>1</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="bar-container">
+                        <div>2</div>
+                    </div>
+                    <div id="info-container">
+                        <div>3</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
-            <!-- footer section -->
-            <section class="footer-section">
-                <div class="inner-footer">
+        <!-- footer section -->
+        <section class="footer-section">
+            <div class="inner-footer">
 
-                    <div class="f-top">
-                        Thanks for checking out my website! I am fairly new to web development but I had a lot of fun learning HTML, CSS and JS.
+                <div class="f-top">
+                    Thanks for checking out my website! I am fairly new to web development but I had a lot of fun learning HTML, CSS and JS.
+                </div>
+
+                <div class="f-bottom">
+
+                    <div class="f-left"> <p> If you have any tips or resources that you think may help me click this link to send me some links. <br> <br>
+                        <a href="../index.html#contact-form">Click!</a></p>
                     </div>
 
-                    <div class="f-bottom">
-
-                        <div class="f-left"> <p> If you have any tips or resources that you think may help me click this link to send me some links. <br> <br>
-                            <a href="../index.html#contact-form">Click!</a></p>
-                        </div>
-
-                        <div class="f-right">
-                            <H3>Resources I used</H3>
-                            <ul>
-                                <li><a href="https://www.w3schools.com/">w3schools</a></li>
-                                <li><a href="https://unsplash.com/">Upsplash</a></li>
-                                <li><a href="https://pages.github.com/">Github Pages</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="https://www.cloudflare.com/">Cloudflare</a></li>
-                                <li><a href="#">Google Fonts</a></li>
-                                <li><a href="#">Google APIs</a></li>
-                            </ul>
-
-                        </div>
+                    <div class="f-right">
+                        <H3>Resources I used</H3>
+                        <ul>
+                            <li><a href="https://www.w3schools.com/">w3schools</a></li>
+                            <li><a href="https://unsplash.com/">Upsplash</a></li>
+                            <li><a href="https://pages.github.com/">Github Pages</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="https://www.cloudflare.com/">Cloudflare</a></li>
+                            <li><a href="#">Google Fonts</a></li>
+                            <li><a href="#">Google APIs</a></li>
+                        </ul>
 
                     </div>
 
                 </div>
-            </section>
+
+            </div>
+        </section>
 
         <!------------------------ scripts ------------------------>
         <script src="../js-scripts/loadingScripts.js" ></script>

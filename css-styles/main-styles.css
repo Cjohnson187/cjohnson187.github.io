@@ -481,26 +481,17 @@ input[type=submit]:hover {
 
 
 
-/**&&&&&&&&&&&&&&&&&&&&&&&&&&&&& about page &&&&&&&&&&&&&&&&&&&&&&&&&&&&&**/
-
-/***************************** general body section *****************************/
-
-#body-projects {
-    display: flex;
-    flex-direction: column;
-}
-/***************************** body section *****************************/
-
-.about-body-section {
-    min-height: 1000px;
-}
-
 
 
 
 /**&&&&&&&&&&&&&&&&&&&&&&&&&&&&& projects page &&&&&&&&&&&&&&&&&&&&&&&&&&&&&**/
 
 /***************************** body section *****************************/
+
+#body-projects {
+    display: flex;
+    flex-direction: column;
+}
 
 
 #project-body-section {
@@ -529,8 +520,8 @@ input[type=submit]:hover {
     text-align: center;
     width: 30vw;
     height: 30vw;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 30px;
     cursor: pointer;
 
@@ -610,8 +601,8 @@ input[type=submit]:hover {
 
 .expanded {
     width: 100% !important;
-    max-width: 400px !important;
-    max-height: 400px !important;
+    max-width: 550px !important;
+    max-height: 550px !important;
     height: 60vh !important;
 }
 
@@ -634,4 +625,67 @@ input[type=submit]:hover {
     background-color: white;
     color:  #BC4123;
     font-size: 5vh;
+}
+
+
+/**&&&&&&&&&&&&&&&&&&&&&&&&&&&&& about page &&&&&&&&&&&&&&&&&&&&&&&&&&&&&**/
+
+/***************************** general body section *****************************/
+#body-about {
+    display: flex;
+    flex-direction: column;
+}
+
+/***************************** body section *****************************/
+
+.about-body-section {
+    min-height: 1000px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-containers {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: 90%;
+    border-top-style: inset;
+    border-color: black;
+    background-color: white;
+
+    /* temp */
+
+}
+
+#inner-about {
+    display: flex;
+    flex-direction: row;
+}
+#media-container {
+    width: 30%;
+    display: flex;
+    /* temp */
+    background-color: gray;
+    border-right-style: dashed;
+    border-color: #BC4123;
+}
+#bar-container {
+    width: 10%;
+    display: flex;
+    
+    /* temp */
+    background-color: gray;
+    border-right-style: dashed;
+    border-color: #BC4123;
+
+
+}
+#info-container {
+    display: flex;
+    width: 60%;
+
+    /* temp */
+    text-align: center;
+    background-color: gray;
 }
