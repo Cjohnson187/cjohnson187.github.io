@@ -6,6 +6,8 @@ html {
     box-sizing: border-box;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 ::-webkit-scrollbar {
@@ -29,6 +31,7 @@ ul.topnav {
     width: 100%;
     background-color: black;
     position: fixed;
+    z-index: 100;
 
     /* test */
     font: 25px 'Times New Roman', Times, serif;
@@ -105,8 +108,6 @@ ul.topnav div.right {display: flex;}
 }
 .active { display: none !important; }
 
-
-width: 100;
 
 
 /***************************** Responsive design settings *****************************/
@@ -634,22 +635,31 @@ input[type=submit]:hover {
 
 /***************************** general body section *****************************/
 #body-about {
-    display: flex;
-    flex-direction: column; 
+    margin-top: 0;
+    padding-top: 0;
+    height: 100%;
+
 }
+
+@media screen and (max-width: 600px) { 
+    .about-containers {
+        padding-top: 0 !important;
+    }
+}
+
 
 /***************************** body section *****************************/
 
 .about-body-section {
-    height: 100%;
-    margin-top: 60px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
+    max-width: 1200px;
 }
-
 .about-containers {
+    box-sizing: border-box;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -658,59 +668,39 @@ input[type=submit]:hover {
     border-top-style: inset;
     border-color: black;
     background-color: white;
-
-    /* temp */
-
 }
-
 #inner-about {
     display: flex;
-    flex-direction: row;
     height: 100%;
-}
-#media-container {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    /* temp */
-    background-color: gray;
-}
-
-#media-container div {
-    display: block;
-    margin: 10px 10px;
-    border-style: dotted;
-    border-color: #BC4123;
 }
 #bar-container {
     width: 10%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    float: left;
     
     /* temp */
     background-color: gray;
-
-
 }
-#info-container {
-    display: flex;
-    width: 60%;
-
-    /* temp */
-    text-align: center;
-    background-color: gray;
-}
-
 .progress-container {
     width: 8px;
     height: 90%;
     background-color: #ccc;
+    margin: auto;
 }
 .progress-bar {
     height: 100%;
     background: #4caf50;
     width: 8px;
-    margin-right: auto;
-    margin-left: auto;
 }
+
+#about-wrapper {
+    width: 90%;
+}
+
+#me {
+    max-width: 162px;
+    width: 100%;
+}
+
+
+
