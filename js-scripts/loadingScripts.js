@@ -40,3 +40,13 @@ function expand(y) {
 
     }    
 }
+
+window.onscroll = function() {progress()};
+
+function progress () {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    console.log(height);
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("bar").style.height = scrolled +"%";
+}
