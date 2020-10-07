@@ -152,6 +152,13 @@ ul.topnav div.right {display: flex;}
         display: inline-block;
         cursor: pointer;
     }
+    #body-about {
+        font: 3vw 'Times New Roman', Times, serif;
+    }
+    .image-box {
+        max-height: 166px !important;  
+        max-width: 155px !important;
+    }
 }
 
 
@@ -226,6 +233,8 @@ body {
     height: 100%;
     width: 100%;
     margin-top: 15%;
+    background-color: rgb(20, 20, 20, .3);
+    border-radius: 30px;
 
     margin-bottom: 15%;
     margin-left: auto;
@@ -241,8 +250,6 @@ body {
     width: 40%;
     float: left;
     margin: 10% 5%;
-    border-style: groove;
-    background-color: azure;
     border-radius: 50px;
 }
 #inner-right {
@@ -679,7 +686,6 @@ input[type=submit]:hover {
     margin-right: 10px;
     
     /* temp */
-    background-color: gray;
 }
 .progress-container {
     width: 8px;
@@ -689,7 +695,7 @@ input[type=submit]:hover {
 }
 .progress-bar {
     height: 100%;
-    background: #4caf50;
+    background:  #BC4123;
     width: 8px;
 }
 
@@ -712,6 +718,8 @@ input[type=submit]:hover {
     border-radius: 20px;
 }
 .about-right {
+    background-color: rgb(20, 20, 20, .3);
+    border-radius: 20px;
     text-align: center;
     box-sizing: border-box;
     margin-top: auto;
