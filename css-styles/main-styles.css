@@ -728,3 +728,6 @@ input[type=submit]:hover {
     width: 100%;
     height: auto;
 }
+.about-right p{
+    padding: 20px;
+}
