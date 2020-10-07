@@ -659,15 +659,14 @@ input[type=submit]:hover {
 }
 .about-containers {
     box-sizing: border-box;
-    padding-top: 60px;
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    border-top-style: inset;
-    border-color: black;
-    background-color: white;
+    margin-bottom: 50px;
+    color: white;
 }
 #inner-about {
     display: flex;
@@ -677,6 +676,7 @@ input[type=submit]:hover {
     width: 10%;
     display: flex;
     float: left;
+    margin-right: 10px;
     
     /* temp */
     background-color: gray;
@@ -696,11 +696,27 @@ input[type=submit]:hover {
 #about-wrapper {
     width: 90%;
 }
-
-#me {
-    max-width: 162px;
-    width: 100%;
+.about-container {
+    box-sizing: border-box;
+    display: flex;
+    padding: 30px 0;
+    border-bottom: #BC4123;
+    border-bottom-style: groove;
 }
 
-
-
+.image-box {
+    max-width: 250px;
+    max-height: 280px;
+    width: 100%;
+    margin: auto;
+    border-radius: 20px;
+}
+.about-right {
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin: auto 10px;
+    width: 100%;
+    height: auto;
+}
