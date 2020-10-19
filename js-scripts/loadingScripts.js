@@ -19,6 +19,7 @@ function change() {
 
 
 
+/* function for animation of list button on small screen */
 function load() {
     setTimeout(function() {
         change();  
@@ -41,12 +42,15 @@ function expand(y) {
     }    
 }
 
-window.onscroll = function() {progress()};
-
-function progress () {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    console.log(height);
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("bar").style.height = scrolled +"%";
+/* hide top nav on scroll */
+var prevScrollPos = window.pageYOffset;
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollPos > currentScrollPos) {
+        document.getElementById("header-section").style.top = "0";
+    }
+    else {
+        document.getElementById("header-section").style.top ="-50px"
+    }
+    prevScrollPos = currentScrollPos;
 }
