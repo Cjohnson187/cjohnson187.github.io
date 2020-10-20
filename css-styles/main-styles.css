@@ -160,31 +160,88 @@ body {
     top: 0;
     padding: 0;
     margin: 0;
-    font: clamp(25px, 2.5vh, 40px) 'Times New Roman', Times, serif;
+    font: clamp(2.5vh, 3vw, 4vh) 'Times New Roman', Times, serif;
 }
 
 .body-section {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-image: url(../images/sajad-nori-fS84AVYcxU4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
 }
 
 #home-section{
     height: 100vh;
-    background-color: #BC4123;
-/*     background-image: url(../images/sajad-nori-fS84AVYcxU4-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
- */}
+    padding-top: 59px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#home-inner {
+    color: white;
+    display: block;
+    width: 70%;
+    height: fit-content;
+    max-width: 800px;
+    padding-left: 20px;
+    border-left: whitesmoke;
+    border-left-style: solid;
+    border-left-color: #BC4123;
 
+}
+#home-inner h1 {
+    font-size: clamp(47px, 6vw, 11vh) ;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+#home-inner h5 {
+    margin-bottom: 10px;
+}
+#home-inner h2 {
+    margin-top: 0px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    border-top-style: ridge;
+    border-top-color: #BC4123;
+    width: fit-content ;
+}
+
+#home-inner p a {
+    text-decoration: unset;
+}
+
+#home-inner h1, #home-inner h5, #home-inner p, #home-inner h2{
+    left: 0;
+    text-shadow: 4px 4px black;
+}
 #about-section{
     height: 100vh;
-    background-color: black;
+    color: white;
+    border-top: solid #BC4123;
+    border-bottom: solid #BC4123;
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
 }
+#about-left {
+    width: 30%;
+    overflow: hidden;
+}
+#about-right{
+    width: 60%;
+    overflow: hidden;
+}
+
+.images {
+    max-width: 250px;
+    width: 70%;
+}
+
 #project-section{
     height: 100vh;
-    background-color: aqua;
 }
 

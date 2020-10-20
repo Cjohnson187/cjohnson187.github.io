@@ -50,7 +50,7 @@ window.onscroll = function() {
         document.getElementById("header-section").style.top = "0";
     }
     else {
-        document.getElementById("header-section").style.top ="-50px"
+        document.getElementById("header-section").style.top ="-59px"
     }
     prevScrollPos = currentScrollPos;
 }
