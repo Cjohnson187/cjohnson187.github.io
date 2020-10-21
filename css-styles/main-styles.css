@@ -225,20 +225,71 @@ body {
     border-bottom: solid #BC4123;
     display: flex;
     flex-direction: row;
-    padding: 5%;
+    padding: 3%;
 }
 #about-left {
     width: 30%;
     overflow: hidden;
+    padding-right: 20px;
 }
 #about-right{
     width: 60%;
     overflow: hidden;
 }
+#about-right p{
+    max-height: 240px;
+    overflow-y: scroll;
+    font-size: clamp(15px, 3vw, 19px);
+}
+#contact-container {
+    overflow: wrap;
+    overflow-wrap: break-word;
+}
 
 .images {
     max-width: 250px;
     width: 70%;
+}
+#skills-container p {
+    font-size: clamp(3px, 10px, 20px);
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+.skills-container {
+    width: 100%;
+    background-color: #ddd;
+}
+.skills{
+    text-align: right;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 1.6vw;
+}
+
+.java{
+    width: 60%;
+    background-color: green;
+}
+.python {
+    width: 50%;
+    background-color: blue;
+}
+.html-css {
+    width: 50%;
+    background-color: red;
+}
+.java-script {
+    width: 40%;
+    background-color: yellow;
+}
+.kotlin {
+    width: 30%;
+    background-color: purple;
+}
+.sql {
+    width: 30%;
+    background-color: darkgray;
 }
 
 #project-section{
@@ -256,4 +307,6 @@ body {
     right: 0;
     left: 0;
 }
+
+
 
