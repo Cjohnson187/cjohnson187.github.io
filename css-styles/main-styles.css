@@ -45,7 +45,10 @@ ul.topnav li a.active {background-color:#BC4123;}
 
 ul.topnav div.right {display: flex;}
 
-.social-li { float: right !important; }
+.social-li { 
+    float: right !important;
+    font-size: clamp(25px, 3vw, 4vh);
+ }
 
 .menu-button {
     display: none;
@@ -173,6 +176,8 @@ body {
     background-size: cover;
 }
 
+/* *************** Home Section *********************** */
+
 #home-section{
     height: 100vh;
     padding-top: 59px;
@@ -191,9 +196,14 @@ body {
     border-left: whitesmoke;
     border-left-style: solid;
     border-left-color: #BC4123;
-
+}
+.line {
+    height: 3px;
+    background-color: #BC4123;
+    width: 70%;
 }
 #home-inner h1 {
+    width: unset;
     font-size: clamp(47px, 6vw, 11vh) ;
     margin-top: 0px;
     margin-bottom: 10px;
@@ -205,8 +215,6 @@ body {
     margin-top: 0px;
     padding-top: 10px;
     margin-bottom: 10px;
-    border-top-style: ridge;
-    border-top-color: #BC4123;
     width: fit-content ;
 }
 
@@ -218,6 +226,8 @@ body {
     left: 0;
     text-shadow: 4px 4px black;
 }
+/* *************** About Section *********************** */
+
 #about-section{
     height: 100vh;
     color: white;
@@ -231,15 +241,17 @@ body {
     width: 30%;
     overflow: hidden;
     padding-right: 20px;
+    margin-top: 25px;
 }
 #about-right{
     width: 60%;
     overflow: hidden;
 }
 #about-right p{
-    max-height: 240px;
+    max-height: 150px;
     overflow-y: scroll;
     font-size: clamp(15px, 3vw, 19px);
+    
 }
 #contact-container {
     overflow: wrap;
@@ -249,13 +261,14 @@ body {
 .images {
     max-width: 250px;
     width: 70%;
+    margin-bottom: 25px;
 }
 #skills-container p {
     font-size: clamp(3px, 10px, 20px);
     margin-top: 5px;
     margin-bottom: 1px;
 }
-.skills-container {
+.skill-container {
     width: 100%;
     background-color: #ddd;
 }
@@ -264,36 +277,50 @@ body {
     color: white;
     padding-top: 3px;
     padding-bottom: 3px;
-    font-size: 1.6vw;
+    font-size: 1.3vw;
+    padding-right: 10px;
 }
 
 .java{
     width: 60%;
-    background-color: green;
+    background-color: orange;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
 }
 .python {
     width: 50%;
     background-color: blue;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
 }
 .html-css {
     width: 50%;
     background-color: red;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
+
 }
 .java-script {
     width: 40%;
-    background-color: yellow;
+    background-color: purple;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
 }
 .kotlin {
     width: 30%;
-    background-color: purple;
+    background-color: green;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
 }
 .sql {
     width: 30%;
     background-color: darkgray;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
 }
-
+/* *************** Project Section *********************** */
 #project-section{
-    height: 100vh;
+    min-height: 100vh;
     color: white;
     display: flex;
     flex-direction: column;
@@ -303,10 +330,114 @@ body {
 #inner-projects {
     width: 90%;
     height: 80%;
-    background-color: black;
     right: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+#inner-projects > div {
+    display: flex;
+    margin: 10px;
+    text-align: center;
+    width: 30vw;
+    height: 30vw;
+    max-width: 300px;
+    max-height: 300px;
+    cursor: pointer;
+    border-radius: 30px;
+
+    /* temp */
+    background-color: white;
+}
+.expanded {
+    width: 100% !important;
+    max-width: 550px !important;
+    height: 60vh !important;
+    max-height: 550px !important;
 }
 
+.inside {
+    height: 50%;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: auto;
+    background-color: rgb(36, 35, 35, .7);
+    display: none;
+    color: white;
+    font-size: 2vh;
+    overflow: scroll;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.inside .fa {
+    background-color: white;
+    color: #BC4123;
+    font-size: 5vh;
+}
+
+/*___________ individual projects ___________*/
+#webpage-screen {
+    background-image: url(../images/projects/webpage_screen);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#captcha {
+    background-image: url(../images/projects/captcha1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#git-confused {
+    background-image: url(../images/projects/git-confused1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ipps {
+    background-image: url(../images/projects/ipps_sql_java.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#lex-syn {
+    background-image: url(../images/projects/lex_syn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#three-class {
+    background-image: url(../images/projects/ml_3classifiers_py.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#oop {
+    background-image: url(../images/projects/oop_java.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sched {
+    background-image: url(../images/projects/simulated_sched_py.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#skynet {
+    background-image: url(../images/projects/skynet_ml_py.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sudoku_hs {
+    background-image: url(../images/projects/sudoku_hs.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#expert-sys {
+    background-image: url(../images/projects/expert_sys_prolog.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#hot-cold {
+    background-image: url(../images/projects/hot_cold_kotlin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
