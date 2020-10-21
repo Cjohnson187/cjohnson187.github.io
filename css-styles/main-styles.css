@@ -5,8 +5,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
+    width: 2px;
 }
 /***************************** index body wrapper*****************************/
 
@@ -196,6 +195,7 @@ body {
     border-left: whitesmoke;
     border-left-style: solid;
     border-left-color: #BC4123;
+    margin-bottom: 50px;
 }
 .line {
     height: 3px;
@@ -241,11 +241,12 @@ body {
     width: 30%;
     overflow: hidden;
     padding-right: 20px;
-    margin-top: 25px;
+    margin: auto;
 }
 #about-right{
     width: 60%;
     overflow: hidden;
+    margin: auto;
 }
 #about-right p{
     max-height: 150px;
@@ -367,7 +368,7 @@ body {
     display: none;
     color: white;
     font-size: 2vh;
-    overflow: scroll;
+    overflow-y: scroll;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
