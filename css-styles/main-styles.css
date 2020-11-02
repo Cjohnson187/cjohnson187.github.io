@@ -348,15 +348,14 @@ body {
     max-height: 300px;
     cursor: pointer;
     border-radius: 30px;
-
-    /* temp */
-    background-color: white;
+    transition: .3s;
 }
 .expanded {
     width: 100% !important;
     max-width: 550px !important;
     height: 60vh !important;
     max-height: 550px !important;
+    transition: .3s;
 }
 
 .inside {
@@ -380,18 +379,18 @@ body {
 
 /*___________ individual projects ___________*/
 #webpage-screen {
-    background-image: url(../images/projects/webpage_screen);
+    background-image: url(../images/projects/website1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #captcha {
-    background-image: url(../images/projects/captcha1.png);
+    background-image: url(../images/projects/captcha2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 #git-confused {
-    background-image: url(../images/projects/git-confused1.png);
+    background-image: url(../images/projects/git_confused_1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
