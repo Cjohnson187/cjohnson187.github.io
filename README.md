@@ -1,2 +1,2 @@
 # cjohnson187.github.io
-Dev branch- restarting witha  clean pallet.
+Dev branch- restarting with a  clean pallet.
