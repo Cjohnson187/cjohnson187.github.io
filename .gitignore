@@ -1,5 +1,26 @@
-package.json
-package-lock.json
-.eslintrc.js
-node_modules/*
-notes/*
+#Dependency directories
+/node_modules
+/dist
+/build
+/out
+
+#Logs
+npm-debug.log
+yarn-error.log
+.npm
+
+#Runtime and system files
+.DS_Store
+Thumbs.db
+
+#Environment variables (Crucial for security)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+#IDE and Editor files
+.vscode
+.idea
+*.sublime-workspace
