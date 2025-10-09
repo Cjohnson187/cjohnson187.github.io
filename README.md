@@ -1,82 +1,99 @@
-Christopher Johnson | Professional Software Engineering Portfolio
-This repository hosts the source code for my professional portfolio website, built using React. This specific branch, old-standard-build, represents a classic, stable version of my site, showcasing key projects, technical capabilities, and professional experience in full-stack development, Java microservices, and modern cloud deployment.
+Portfolio React
+A modern, responsive portfolio website built with React and Vite, showcasing technical skills, professional experience, and key projects. This repository, hosted on a GitHub User Page (cjohnson187.github.io), is configured for seamless deployment directly from the source code.
 
-🚀 Tech Stack
-This project is built using modern JavaScript development practices.
+🛠️ Tech Stack & Features
+Framework: React (using the latest features and hooks)
 
-Frontend Framework: React.js
+Build Tool: Vite (for fast local development and optimized production builds)
 
-Language: JavaScript (ES6+)
+Language: JavaScript / JSX
 
-Styling: Standard CSS or a CSS preprocessor (Sass/LESS)
+Styling: [Insert your primary styling method here, e.g., Tailwind CSS, Modular CSS, SCSS]
 
-Build Tool: Webpack/Create React App (or similar bundler)
+Deployment: GitHub Pages
 
-Version Control: Git
-
-✨ Key Features & Demonstrated Skills
-The code within this repository demonstrates proficiency in the following areas, aligning with industry best practices for a Full Stack Software Engineer:
-
-Component Architecture: Creation of modular, reusable, and stateful React components.
-
-Responsive Design: Utilizing modern CSS techniques to ensure optimal viewing across mobile, tablet, and desktop devices.
-
-Routing: Implementing client-side routing (e.g., using react-router-dom) to navigate between project pages and sections.
-
-Maintainability: Writing clean, well-documented code that adheres to standard linting and formatting rules.
-
-Professional Alignment: Showcase of projects that utilize backend concepts, microservices architecture, and cloud technologies (as detailed in project descriptions).
-
-🛠️ Local Installation and Setup
-Follow these steps to get a local copy of the project running on your machine for development and testing.
+🚀 Getting Started
+Follow these instructions to get a copy of the project up and running on your local machine.
 
 Prerequisites
-You must have the following software installed:
+You need Node.js (which includes npm) installed on your system.
 
-Node.js (LTS version recommended)
-
-npm or Yarn
-
-Steps
-Clone the Repository:
+Installation
+Clone the repository:
 
 git clone [https://github.com/Cjohnson187/cjohnson187.github.io.git](https://github.com/Cjohnson187/cjohnson187.github.io.git)
 
-Navigate to the Branch and Project Directory:
+
+Navigate to the directory:
 
 cd cjohnson187.github.io
-git checkout old-standard-build
 
-Install Dependencies:
 
-npm install  # or yarn install
+Checkout the development branch (where the React code resides):
 
-Start the Development Server:
+git checkout dev-react
 
-npm start  # or yarn start
 
-The application will automatically open in your browser at http://localhost:3000 (or similar port).
+Install dependencies:
 
-📦 Deployment
-This project is hosted on GitHub Pages. Deployment is handled via a dedicated build script and configuration (e.g., using gh-pages or a custom CI/CD pipeline).
+npm install
 
-To create a production build locally:
 
-npm run build # or yarn build
+▶️ Available Scripts
+In the project directory, you can run:
 
-The optimized static assets will be placed in the build/ directory, ready to be served by any static hosting provider.
+Command
 
-🤝 Contribution
-This repository is primarily maintained for professional demonstration. However, if you find any bugs or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+Description
 
-📧 Contact
-Christopher Johnson
+npm run dev
 
-LinkedIn: linkedin.com/in/cjohnson289
+Runs the app in development mode. Opens http://localhost:5173 to view it in the browser.
 
-Email: chrisfjohnson3@gmail.com
+npm run build
 
-This portfolio is continually updated to reflect new skills and projects. Check the main branch for the latest version.
+Builds the app for production to the dist folder. The build is minified and the filenames include hashes.
+
+npm run preview
+
+Serves the production dist folder locally for testing purposes.
+
+npm run lint
+
+Runs ESLint to check for code quality and style issues.
+
+☁️ Deployment for GitHub Pages
+This repository utilizes a User Page structure (USERNAME.github.io), meaning the site is served from the root of the repository URL (https://cjohnson187.github.io/).
+
+Deployment Strategy: The recommended strategy is to configure GitHub Pages to serve the content generated from the npm run build command on the dev-react branch.
+
+Deployment Steps (Manual or CI/CD)
+Run the Build Command: This generates the production-ready static files inside the dist folder.
+
+npm run build
+
+
+Configure GitHub Pages:
+
+Go to Settings in your GitHub repository.
+
+Navigate to the Pages section.
+
+Under Build and deployment, ensure the Source is set to:
+
+Branch: dev-react
+
+Folder: /dist
+
+Commit and Push: Push the built code and the rest of your source code to the dev-react branch. The GitHub Pages workflow will automatically deploy the contents of the dist folder from that branch.
+
+git add .
+git commit -m "Build and push for deployment"
+git push origin dev-react
+
+
+✍️ Contribution
+If you are a collaborator, please ensure all new features and bug fixes are committed to a feature branch derived from dev-react and merged back via a Pull Request.
 
 
 
