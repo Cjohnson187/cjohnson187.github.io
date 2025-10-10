@@ -11,12 +11,10 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  
-  // -------------------------------------------------------------------
-  // 🚀 FIX: Set base to './' for GitHub Pages to resolve asset paths correctly.
-  // This forces relative paths (e.g., ./assets/...) in the built index.html.
-  // This is often required even for User Pages to resolve assets properly 
-  // in some hosting configurations.
-  // -------------------------------------------------------------------
-  base: './', 
+  base: '/', 
+
+  build: {
+    //deployment script (gh-pages -d build). // default is dist
+    outDir: 'build', 
+  }
 });
