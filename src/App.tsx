@@ -117,7 +117,7 @@ export default function App() {
 
       {/* Projects Section */}
       {/* update projects and links in portfolio data file */}
-      {/* <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/30">
+      <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-6xl mx-auto">
           <h2 className="mb-4 text-center">Featured Projects</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -129,7 +129,7 @@ export default function App() {
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8">

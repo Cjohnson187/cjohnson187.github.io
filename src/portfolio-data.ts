@@ -41,28 +41,12 @@ export const portfolioData = {
   ],
   projects: [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with real-time inventory management and payment processing.",
-      image: "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzU5OTYzNjQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/yourusername/project1"
+      title: "Personal Website",
+      description: "This is my portfolio website, designed with figma, developed with typesscript/react and deployed staticly with vite.",
+      image: "/portfolio-screenshot.png",
+      technologies: ["React", "Node.js", "Vite", "Github Pages"],
+      liveUrl: "https://cjohnson187.github.io/",
+      githubUrl: "https://github.com/Cjohnson187/cjohnson187.github.io"
     },
-    {
-      title: "Task Management App",
-      description: "Collaborative task management tool with real-time updates and team features.",
-      image: "https://images.unsplash.com/photo-1658806277165-af0b60eb6733?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwYWJzdHJhY3R8ZW58MXx8fHwxNzU5OTk2MzQ0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      technologies: ["Next.js", "TypeScript", "MongoDB", "WebSocket"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/yourusername/project2"
-    },
-    {
-      title: "Analytics Dashboard",
-      description: "Data visualization platform with interactive charts and real-time metrics.",
-      image: "https://images.unsplash.com/photo-1546900703-cf06143d1239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGV8ZW58MXx8fHwxNzU5OTQ4NDczfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      technologies: ["React", "D3.js", "Python", "FastAPI"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/yourusername/project3"
-    }
   ]
 };
