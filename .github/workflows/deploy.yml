@@ -4,7 +4,7 @@ on:
   push:
     # Trigger the workflow only when changes are pushed to your development branch
     branches:
-      - main 
+      - dev-react 
   
 # Give the workflow permission to read the code and write to the pages deployment
 permissions:
@@ -20,6 +20,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
+          # Required for gh-pages to inspect branches
           fetch-depth: 0 
 
       - name: Setup Node.js
@@ -37,12 +38,11 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
       # ----------------------------------------------------------------------
-      # 🚀 FIX: Pass the GITHUB_TOKEN for Authentication
-      # The GITHUB_TOKEN is a temporary secret provided by GitHub Actions that 
-      # gives the runner permission to push the content to the repository.
+      # 🚀 FINAL FIX: Use the GH_TOKEN to specify the repo URL for authentication.
+      # The GITHUB_TOKEN is passed, and gh-pages uses the full URL syntax 
+      # (https://TOKEN@github.com/OWNER/REPO) to authenticate the push.
       # ----------------------------------------------------------------------
       - name: Deploy to GitHub Pages
-        run: npm run deploy
-        env:
-          # Use the repository secret token for authentication
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # The 'repo' option specifies the exact destination URL for gh-pages to push to.
+        # It uses the token for authentication instead of relying on default Git config.
+        run: npx gh-pages -d build -r https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
