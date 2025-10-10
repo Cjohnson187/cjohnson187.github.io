@@ -12,7 +12,7 @@ export default defineConfig({
     },
   },
   // commenting out base for github pages deployment
-  // base: './', 
+  base: './', 
 
   build: {
     //deployment script (gh-pages -d build). // default is dist
