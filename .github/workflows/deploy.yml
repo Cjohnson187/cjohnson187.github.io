@@ -1,11 +1,12 @@
-name: Deploy to GitHub Pages
+name: Deploy Portfolio to GitHub Pages
 
 on:
-  # Trigger the workflow when you push code to your development branch
   push:
+    # Trigger the workflow only when changes are pushed to your development branch
     branches:
-      - main  
-# Workflow permissions to push build to github pages
+      - main 
+  
+# Give the workflow permission to read the code and write to the pages deployment
 permissions:
   contents: write 
   pages: write 
@@ -16,31 +17,32 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout repository
+      - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          # This ensures the action has access to the full git history for deployment
           fetch-depth: 0 
-          
-      - name: Set up Node.js
-        # Node.js 20.19+ Required
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20' 
           cache: 'npm'
-
-      - name: Install dependencies
+          
+      - name: Install Dependencies
         run: npm install
 
-        # configure user for the deployment commit
       - name: Configure Git User
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Build and deploy 🚀
-        # Run the deploy script we defined in package.json
+          
+      # ----------------------------------------------------------------------
+      # 🚀 FIX: Pass the GITHUB_TOKEN for Authentication
+      # The GITHUB_TOKEN is a temporary secret provided by GitHub Actions that 
+      # gives the runner permission to push the content to the repository.
+      # ----------------------------------------------------------------------
+      - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
-          # This is the secret gh-pages uses to push to the repository
+          # Use the repository secret token for authentication
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
