@@ -11,7 +11,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/', 
+  base: './', 
 
   build: {
     //deployment script (gh-pages -d build). // default is dist
