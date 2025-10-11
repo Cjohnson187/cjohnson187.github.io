@@ -13,7 +13,7 @@ export const portfolioData = {
   about: {
     paragraphs: [
       "I am a results-driven Full Stack Software Engineer with over five years of experience specializing in building secure, scalable enterprise applications. My core expertise is in the Java/Spring Boot ecosystem for resilient backend services and modern React/TypeScript for high-performance user interfaces.",
-      "Throughout my career at Silicon Mountain Technologies, I focused on high-stakes projects, including successfully re-platforming a legacy AngularJS system to a modern React stack to improve maintainability and team velocity. I combine my development skills with deep DevOps proficiency, administering and optimizing AWS GovCloud infrastructure, automating CI/CD pipelines with Jenkins and Kubernetes, and engineering secure microservices that meet stringent federal security protocols.",
+      "Throughout my career at Silicon Mountain Technologies, I focused on high-stakes projects, including successfully re-platforming a legacy AngularJS system to a modern React stack to improve maintainability and team velocity. I combine my development skills with deep DevOps proficiency, administering and optimizing AWS infrastructure, automating CI/CD pipelines with Jenkins and Kubernetes, and engineering secure microservices that meet stringent federal security protocols.",
       "I am driven by clean code, technical excellence, and the challenge of simplifying complex data integration problems."
     ]
   },
