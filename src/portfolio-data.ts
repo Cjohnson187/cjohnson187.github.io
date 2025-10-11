@@ -48,5 +48,13 @@ export const portfolioData = {
       liveUrl: "https://cjohnson187.github.io/",
       githubUrl: "https://github.com/Cjohnson187/cjohnson187.github.io"
     },
+    {
+      title: "Sudoku Solver in Haskell",
+      description: "A command-line Sudoku solver implemented in Haskell. This project was completed as an assignment for CS3210 (Principles of Programming Languages) in Fall 2019, demonstrating udnerstaning of functional programming concepts such as recursion, pattern matching, and high-order functions.",
+      image: "/SudokuSolverScreenshot.png",
+      technologies: ["Haskell"],
+      // liveUrl: "https://cjohnson187.github.io/",
+      githubUrl: "https://github.com/PPL-Monce-Chris/Sudoku-Solver"
+    },
   ]
 };
