@@ -44,7 +44,7 @@ export const portfolioData = {
       title: "Personal Website",
       description: "This is my portfolio website, designed with figma, developed with typesscript/react and deployed staticly with vite.",
       image: "/portfolio-screenshot.png",
-      technologies: ["React", "Node.js", "Vite", "Github Pages"],
+      technologies: ["React", "TypeScript", "Node", "Vite", "Github Pages"],
       liveUrl: "https://cjohnson187.github.io/",
       githubUrl: "https://github.com/Cjohnson187/cjohnson187.github.io"
     },
