@@ -51,7 +51,7 @@ export const portfolioData = {
     {
       title: "Big O Cheat Sheet",
       description: "A web application that provides a comprehensive cheat sheet for Big O notation, helping developers understand the time and space complexity of various algorithms and data structures. Built with React for the frontend and Node.js for the backend, this project aims to be a quick reference guide for computer science students and professionals.",
-      image: "/bigO.png",
+      image: "/bigo.png",
       technologies: ["React", "TypeScript", "Node.js", "Vite", "Tailwind CSS", "Netlify"],
       liveUrl: "https://iventure.dev/#bigo",
       githubUrl: "https://github.com/Cjohnson187/react-static-sandbox/tree/main/src/projects/bigO"
