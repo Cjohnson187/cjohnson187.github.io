@@ -31,7 +31,7 @@ export const portfolioData = {
     {
       category: "DevOps",
       icon: "Cloud",
-      items: ["AWS", "Elastic Beanstalk", "EC2", "S3", "RDS", "CloudWatch", "IAM", "VPC", "CI/CD", "Jenkins", "Docker", "Kubernetes" ]
+      items: ["AWS", "Elastic Beanstalk", "EC2", "S3", "RDS", "CloudWatch", "IAM", "VPC", "CI/CD", "Jenkins", "Docker", "Kubernetes", "Vite" ]
     },
     {
       category: "Tools",
@@ -45,8 +45,16 @@ export const portfolioData = {
       description: "This is my portfolio website, designed with figma, developed with typesscript/react and deployed staticly with vite.",
       image: "/portfolio-screenshot.png",
       technologies: ["React", "TypeScript", "Node", "Vite", "Github Pages"],
-      liveUrl: "https://cjohnson187.github.io/",
+      liveUrl: "https://www.christopherfjohnson.com/",
       githubUrl: "https://github.com/Cjohnson187/cjohnson187.github.io"
+    },
+    {
+      title: "Big O Cheat Sheet",
+      description: "A web application that provides a comprehensive cheat sheet for Big O notation, helping developers understand the time and space complexity of various algorithms and data structures. Built with React for the frontend and Node.js for the backend, this project aims to be a quick reference guide for computer science students and professionals.",
+      image: "/bigO.png",
+      technologies: ["React", "TypeScript", "Node.js", "Vite", "Tailwind CSS", "Netlify"],
+      liveUrl: "https://iventure.dev/#bigo",
+      githubUrl: "https://github.com/Cjohnson187/react-static-sandbox/tree/main/src/projects/bigO"
     },
     {
       title: "Sudoku Solver in Haskell",
