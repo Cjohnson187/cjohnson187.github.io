@@ -3,7 +3,7 @@ export const portfolioData = {
     name: "Christopher Johnson",
     title: "Full Stack Software Engineer",
     bio: "Dynamic Full Stack Software Engineer with a proven track record at Silicon Mountain Technologies, adept in Java EE, Spring, Node.js, React.js and cloud services (AWS). Spearheaded the integration of critical APIs and Denver, Coloardo re-platformed legacy systems, enhancing operational efficiency. A collaborative leader, skilled in mentoring teams and driving Agile development practices.",
-    image: "/new-pro.jpg"
+    image: "/new-pro.webp"
   },
   contact: {
     email: "chrisfjohnson3@gmail.com",
@@ -43,7 +43,7 @@ export const portfolioData = {
     {
       title: "Personal Website",
       description: "This is my portfolio website, designed with figma, developed with typesscript/react and deployed staticly with vite.",
-      image: "/portfolio-screenshot.png",
+      image: "/portfolio-screenshot.webp",
       technologies: ["React", "TypeScript", "Node", "Vite", "Github Pages"],
       liveUrl: "https://www.christopherfjohnson.com/",
       githubUrl: "https://github.com/Cjohnson187/cjohnson187.github.io"
@@ -51,7 +51,7 @@ export const portfolioData = {
     {
       title: "Big O Cheat Sheet",
       description: "A web application that provides a comprehensive cheat sheet for Big O notation, helping developers understand the time and space complexity of various algorithms and data structures. Built with React for the frontend and Node.js for the backend, this project aims to be a quick reference guide for computer science students and professionals.",
-      image: "/bigo.png",
+      image: "/bigo.webp",
       technologies: ["React", "TypeScript", "Node.js", "Vite", "Tailwind CSS", "Netlify"],
       liveUrl: "https://iventure.dev/#bigo",
       githubUrl: "https://github.com/Cjohnson187/react-static-sandbox/tree/main/src/projects/bigO"
@@ -59,7 +59,7 @@ export const portfolioData = {
     {
       title: "Sudoku Solver in Haskell",
       description: "A command-line Sudoku solver implemented in Haskell. This project was completed as an assignment for CS3210 (Principles of Programming Languages) in Fall 2019, demonstrating udnerstaning of functional programming concepts such as recursion, pattern matching, and high-order functions.",
-      image: "/SudokuSolverScreenshot.png",
+      image: "/SudokuSolverScreenshot.webp",
       technologies: ["Haskell"],
       // liveUrl: "https://cjohnson187.github.io/",
       githubUrl: "https://github.com/PPL-Monce-Chris/Sudoku-Solver"
