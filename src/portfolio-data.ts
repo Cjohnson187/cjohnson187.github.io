@@ -49,6 +49,14 @@ export const portfolioData = {
       githubUrl: "https://github.com/Cjohnson187/cjohnson187.github.io"
     },
     {
+      title: "Code Typer Practice Extension",
+      description: "Practice your code typing speed and accuracy directly within your Visual Studio Code editor, using real code snippets.",
+      image: "/CodeTyperScreenshot.webp",
+      technologies: ["JavaScript", "npm"],
+      // liveUrl: "https://iventure.dev/#bigo",
+      githubUrl: "https://github.com/Cjohnson187/learn-type-extension"
+    },
+    {
       title: "Big O Cheat Sheet",
       description: "A web application that provides a comprehensive cheat sheet for Big O notation, helping developers understand the time and space complexity of various algorithms and data structures. Built with React for the frontend and Node.js for the backend, this project aims to be a quick reference guide for computer science students and professionals.",
       image: "/bigo.webp",
