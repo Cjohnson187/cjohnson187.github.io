@@ -2,7 +2,7 @@ export const portfolioData = {
     personal: {
         name: "Christopher Johnson",
         title: "Full Stack Software Engineer",
-        bio: "Dynamic Full Stack Software Engineer with a proven track record at Silicon Mountain Technologies, adept in Java EE, Spring, Node.js, React.js and cloud services (AWS). Spearheaded the integration of critical APIs and Denver, Coloardo re-platformed legacy systems, enhancing operational efficiency. A collaborative leader, skilled in mentoring teams and driving Agile development practices.",
+        bio: "Dynamic Full Stack Software Engineer with a proven track record at Silicon Mountain Technologies, adept in Java EE, Spring, Node.js, React.js and cloud services (AWS). Spearheaded the integration of critical APIs and re-platformed legacy systems, enhancing operational efficiency. A collaborative leader, skilled in mentoring teams and driving Agile development practices.",
         image: "/new-pro.webp"
     },
     contact: {
