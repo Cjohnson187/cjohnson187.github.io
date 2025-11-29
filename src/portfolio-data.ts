@@ -80,5 +80,13 @@ export const portfolioData = {
             // liveUrl: "https://cjohnson187.github.io/",
             githubUrl: "https://github.com/PPL-Monce-Chris/Sudoku-Solver"
         },
+        {
+            title: "Digital Upflow",
+            description: "A website for my independent business developing websites and services for small businesses.",
+            image: "/digital-upflow.webp",
+            technologies: ["React", "Typescript", "Vite", "Tailwind CSS", "Netlify", "Netlify Forms"],
+            liveUrl: "https://digitalupflow.com/",
+            //githubUrl: "https://github.com/PPL-Monce-Chris/Sudoku-Solver"
+        },
     ]
 };
